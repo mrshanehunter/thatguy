@@ -24,7 +24,9 @@ return(
           <Zoom duration={3000}>
             <h1 className="text-center">
               Visibility has no value without{" "}
-              <Shake delay={3500}>context</Shake>
+              <Fade delay={3500} duration={1000} >
+              <Shake delay={4000}>context</Shake>
+              </Fade>
             </h1>
           </Zoom>
         </AniLink>

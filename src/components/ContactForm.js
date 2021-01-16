@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react"
 import axios from "axios"
 import * as qs from "query-string"
+import { navigate } from "gatsby"
 import Form from "react-bootstrap/Form"
 import Alert from "react-bootstrap/Alert"
 import Button from "react-bootstrap/Button"
@@ -16,18 +17,19 @@ export default function ContactForm(props) {
   const [message, setMessage] = useState("")
 
   function handleSubmit(e) {
-    e.preventDefautl()
+    e.preventDefault()
     setLoading(loading)
     const formData = {
-      company: companyRef.current.value,
-      name: nameRef.current.value,
-      email: emailRef.current.value,
-      phone: phoneRef.current.value,
-      message: messageRef.current.value,
+      "form-name": "contact",
+      "company": companyRef.current.value,
+      "name": nameRef.current.value,
+      "email": emailRef.current.value,
+      "phone": phoneRef.current.value,
+      "message": messageRef.current.value,
     }
     const axiosOptions = {
       url: props.props.location.href,
-      method: "post",
+      method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       data: qs.stringify(formData),
     }
@@ -40,6 +42,7 @@ export default function ContactForm(props) {
         setMessage("Form could not be submitted")
       })
     setLoading(!loading)
+    navigate("/thanks/")
   }
 
   return (
@@ -52,11 +55,11 @@ export default function ContactForm(props) {
         data-netlify="true"
         action="/thanks/"
         ref={formRef}
-        name="contactform"
+        name="contact"
         onSubmit={e => handleSubmit(e)}
       >
         <input type="hidden" name="bot-field" />
-        <input type="hidden" name="contactform" value="Contact Form" />
+        <input type="hidden" name="form-name" value="contact" />
         <Form.Group id="company">
           <Form.Label>Company Name:</Form.Label>
           <Form.Control
