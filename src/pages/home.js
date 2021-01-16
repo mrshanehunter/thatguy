@@ -1,6 +1,6 @@
 import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import Layout from "../components/LayoutComp"
+import Layout from "../components/Layout"
 import Container from "react-bootstrap/Container"
 import Branding from "../components/Branding"
 import Marketing from "../components/Marketing"

@@ -2,7 +2,7 @@ import React from "react"
 import Card from "react-bootstrap/Card"
 import Container from "react-bootstrap/Container"
 import SEO from "../components/SEOComp"
-import Layout from "../components/LayoutComp"
+import Layout from "../components/Layout"
 import ContactForm from "../components/ContactForm"
 
 const ContactPage = props => (

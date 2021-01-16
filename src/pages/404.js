@@ -4,7 +4,7 @@ import BackgroundImage from "gatsby-background-image"
 import Container from "react-bootstrap/Container"
 import Card from "react-bootstrap/Card"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import Layout from "../components/LayoutComp"
+import Layout from "../components/Layout"
 import SEO from "../components/SEOComp"
 
 const NotFoundPage = () => {

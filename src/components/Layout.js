@@ -7,6 +7,11 @@ import Footer from "./Footer"
 
 import Header from "./Header"
 
+const ContentContainer = styled.div`
+  margin: 0;
+  padding: 0;
+`
+
 export default function Layout({ children }) {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -17,11 +22,6 @@ export default function Layout({ children }) {
       }
     }
   `)
-
-  const ContentContainer = styled.div`
-    margin: 0;
-    padding: 0;
-  `
 
   return (
     <>
@@ -39,5 +39,3 @@ export default function Layout({ children }) {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
-
-
