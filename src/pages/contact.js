@@ -1,8 +1,8 @@
 import React from "react"
 import Card from "react-bootstrap/Card"
 import Container from "react-bootstrap/Container"
-import SEO from "../components/SEO"
-import Layout from "../components/Layout"
+import SEO from "../components/SEOComp"
+import Layout from "../components/LayoutComp"
 import ContactForm from "../components/ContactForm"
 
 const ContactPage = props => (
