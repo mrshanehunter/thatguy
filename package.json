@@ -36,7 +36,7 @@
   "keywords": [
     "marketing", "consultant", "brand", "agency", "website", "design", "strategy", "planning"
   ],
-  "license": "PTY",
+  "license": "BSD3",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -48,7 +48,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/mrshanehunter/thatguy.git"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
