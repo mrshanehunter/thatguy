@@ -18,16 +18,17 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `that-guy-from-marketing`,
+        short_name: `tgfm`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#080424`,
+        theme_color: `#080424`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/LGMK.png`, // This path is relative to the root of the site.
       },
     },
     {

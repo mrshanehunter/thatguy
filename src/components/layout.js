@@ -26,21 +26,19 @@ const Layout = ({ children }) => {
   `)
 
   const ContentContainer = styled.div`
-    width: 90%;
-    margin-left: 4rem;
-  `;
+    margin: 0;
+    padding: 0;
+  `
 
   return (
     <>
-    <GlobalStyles />
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <ContentContainer
-        
-      >
+      <GlobalStyles />
+      <ContentContainer>
+        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+
         {children}
-    
+        <Footer />
       </ContentContainer>
-      <Footer />
     </>
   )
 }
