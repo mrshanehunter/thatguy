@@ -18,12 +18,14 @@
     "gatsby-plugin-transition-link": "^1.20.5",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.5.0",
+    "gatsby-source-sanity": "^6.0.5",
     "gatsby-transformer-sharp": "^2.6.0",
     "gsap": "^3.6.0",
     "lazy-line-painter": "^1.9.6",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-bootstrap": "^1.4.3",
+    "react-card-flip": "^1.0.11",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
     "react-reveal": "^1.2.2",
@@ -34,7 +36,14 @@
     "prettier": "2.2.1"
   },
   "keywords": [
-    "marketing", "consultant", "brand", "agency", "website", "design", "strategy", "planning"
+    "marketing",
+    "consultant",
+    "brand",
+    "agency",
+    "website",
+    "design",
+    "strategy",
+    "planning"
   ],
   "license": "BSD3",
   "scripts": {

@@ -61,6 +61,9 @@ h3 {
   :nth-child(1) {
     margin-right: 2vw;
   }
+  :nth-child(2) {
+    margin-right: 2vw;
+  }
  
 }
 
@@ -141,6 +144,20 @@ a {
   color: var(----highlight);
   text-shadow: 0.5vw 0.5vw 0.5rem var(--base);
 
+}
+
+.serviceP p {
+  padding-top: 0;
+  padding-bottom: 0.2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'futura';
+}
+
+.flipBtnF {
+  
+  padding: 0;
+  border-style: none;
 }
 
 
