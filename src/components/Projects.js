@@ -85,17 +85,17 @@ function ProjectItem({ project }) {
       </>
       <>
       <ServiceStyleBack>
-      <button className="w-100 flipBtnF" type="button" onClick={handleClick}>
+      <button className="w-100 flipBtnB" type="button" onClick={handleClick}>
       <ServiceListBack>
         <div className="d-flex-row text-left">
          <h5 style={{textAlign: `left`, marginBottom: `0.25rem`, fontFamily: 'timberline', color: `#1976a5`, fontSize: `2rem`}}>
            <span>{project.client}</span>
          </h5>
-         <h6 style={{textAlign: `left`, marginBottom: `0`, fontFamily: 'futura'}}>
+         <h6 style={{textAlign: `left`, marginBottom: `0`, fontFamily: 'futura', color: `#8abdde`}}>
            <span> {project.industry}</span>
          </h6>
-         <hr />
-          <h6 style={{textAlign: `left`, marginTop: `0.25rem`, fontFamily: 'futura', textTransform: `uppercase`, color: `#223275`}}>
+         <hr style={{background: `#d9d9d9`, maxWidth: `75%`, marginRight: `25%`}}/>
+          <h6 style={{textAlign: `left`, marginTop: `0.25rem`, fontFamily: 'futura', textTransform: `uppercase`, color: `#8abdde`}}>
             Services Provided:
           </h6>
         </div>

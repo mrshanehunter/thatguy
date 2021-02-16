@@ -152,12 +152,18 @@ a {
   margin-top: 0;
   margin-bottom: 0;
   font-family: 'futura';
+  color: var(--gray);
 }
 
 .flipBtnF {
   
   padding: 0;
   border-style: none;
+}
+
+.flipBtnB {
+  border: thin solid var(--highlight);
+  background: var(--base);
 }
 
 
