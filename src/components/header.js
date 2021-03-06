@@ -12,6 +12,11 @@ const Header = ({ siteTitle, children }) => (
         </AniLink>
       </Nav.Item>
       <Nav.Item>
+        <AniLink paintDrip to="/projects/" hex="#223275" duration={0.5}>
+          projects
+        </AniLink>
+      </Nav.Item>
+      <Nav.Item>
         <AniLink paintDrip to="/contact/" hex="#d9d9d9" duration={0.5}>
           contact
         </AniLink>

@@ -23,7 +23,7 @@ const NotFoundPage = () => {
   const imageData = data.desktop.childImageSharp.fluid
 
   return (
-    <Layout>
+    
       <BackgroundImage
         Tag="section"
         fluid={imageData}
@@ -35,6 +35,7 @@ const NotFoundPage = () => {
           backgroundSize: `cover`,
         }}
       >
+        <Layout>
         <SEO title="404: Not found" />
         <Container
           className="d-flex justify-content-center align-items-center"
@@ -56,8 +57,9 @@ const NotFoundPage = () => {
             </Card.Body>
           </Card.Body>
         </Container>
+        </Layout>
       </BackgroundImage>
-    </Layout>
+   
   )
 }
 export default NotFoundPage
