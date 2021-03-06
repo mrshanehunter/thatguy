@@ -3,24 +3,21 @@ import ReactCardFlip from "react-card-flip";
 import Img from "gatsby-image";
 import styled from "styled-components";
 
+
 const ProjectsGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: 1fr;
-  margin-top: 2rem;
-  padding: 5vw;
-  justify-content: center;
-  grid-gap: 8vw;
+  grid-gap: 4rem;
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
-    gap: 5vw;
+    
   }
   @media (min-width: 1024px) {
-   grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
-   grid-auto-rows: auto;
-   padding: 1vw;
-   gap: 5vw;
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-auto-rows: auto; 
   }
 `;
 
@@ -127,10 +124,12 @@ function ProjectItem({ project }) {
 
 export default function Projects({ projects }) {
   return (
-    <ProjectsGrid>
+    <>   
+          <ProjectsGrid>
       {projects.map((project) => (
         <ProjectItem key={project.id} project={project} />
       ))}
     </ProjectsGrid>
+    </>
   )
 }

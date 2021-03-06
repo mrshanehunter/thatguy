@@ -11,7 +11,7 @@ export default function ProjectsPage({ data }) {
   return( 
     <Layout>
       <SEO title="Projects" />
-    <Container className="w-75 mx-auto p-3">
+    <Container className="d-flex mt-3 justify-content-center align-items-center" style={{ maxWidth: `90%`, margin: `0 auto`}}>
       <Projects projects={projects}/>
     </Container>
     </Layout>
