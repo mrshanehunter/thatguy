@@ -34,7 +34,14 @@
     "prettier": "2.2.1"
   },
   "keywords": [
-    "marketing", "consultant", "brand", "agency", "website", "design", "strategy", "planning"
+    "marketing",
+    "consultant",
+    "brand",
+    "agency",
+    "website",
+    "design",
+    "strategy",
+    "planning"
   ],
   "license": "BSD3",
   "scripts": {
