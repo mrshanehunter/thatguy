@@ -24,6 +24,7 @@
     "lazy-line-painter": "^1.9.6",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
+    "react-animated-css": "^1.2.1",
     "react-bootstrap": "^1.4.3",
     "react-card-flip": "^1.0.11",
     "react-dom": "^16.12.0",

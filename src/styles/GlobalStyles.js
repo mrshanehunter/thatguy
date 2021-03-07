@@ -50,21 +50,21 @@ h3 {
 }
 
 .nav {
-  width: 90%;
+  width: 95%;
+  margin: 0 auto;
   padding-top: 4rem;
-  font-family: "futura";
+  font-family: "montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
 }
 
 .nav-item {
   font-size: clamp(1.6rem, 1.3vw, 2rem);
   margin-bottom: 1rem;
-  :nth-child(1) {
-    margin-right: 2vw;
+  margin-right: 2vw;
+  :nth-child(4) {
+    margin-right: 0;
   }
-  :nth-child(2) {
-    margin-right: 2vw;
-  }
- 
 }
 
 a {
@@ -76,7 +76,8 @@ a {
 }
 
 .graded {
-  width: 90%;
+  width: 95%;
+  margin: 0 auto;
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   height: 5px;
@@ -97,20 +98,26 @@ a {
   background: var(--base);
   border: 0.05rem solid var(--accent);
   color: var(--highlight);
-  font-family: "futura";
+  font-family: "montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
   font-size: clamp(1.4rem, 1.2vw, 2rem);
 }
 
 .form-group label {
   color: var(--highlight);
-  font-family: "futura";
+  font-family: "montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
   font-size: clamp(1.4rem, 1.2vw, 2rem);
 }
 
 .form-group textarea {
   background: var(--base);
   border: 0.05rem solid var(--accent);
-  font-family: "futura";
+  font-family: "montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
   font-size: clamp(1.4rem, 1.2vw, 2rem);
 }
 
@@ -122,7 +129,9 @@ a {
 .pageNF h1 {
   color: var(--gray);
   text-shadow: 0.5vw 0.5vw 0.5rem var(--base);
-  font-family: "futura";
+  font-family: "montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
   font-size: clamp(1.8rem, 3vw, 10rem)
 }
 
@@ -139,7 +148,9 @@ a {
   background: rgba(8, 4, 36, 0.45);
   border-radius: 5px;
   border: 0.05rem solid var(--base);
-  font-family: "futura";
+  font-family: "montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
   font-size: clamp(1.8rem, 1.5vw, 4rem);
   color: var(----highlight);
   text-shadow: 0.5vw 0.5vw 0.5rem var(--base);
@@ -151,7 +162,9 @@ a {
   padding-bottom: 0.2rem;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: 'futura';
+  font-family: 'montserrat', sans-serif;
+  font-weight: 500;
+  font-style: normal;
   color: var(--gray);
 }
 
