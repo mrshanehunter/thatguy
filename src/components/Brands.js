@@ -96,11 +96,46 @@ const StyledContent = styled.div`
             top: 10px;
             left: 10px;
         }
-        a {
-            position: relative:
-            top: 20px;
-            left: 190px;
+        .description {
+            position: relative;
+            top: 10px;
+            left: 10px;
         }
+        .animated a {
+            position: relative;
+            top: -55px;
+            left: 35%;
+        }
+        .one {
+            position: relative;
+            top: 5px;
+            left: 10px;
+        } 
+        .two {
+            position: relative;
+            top: 5px;
+            left: 10px;
+        } 
+        .three {
+            position: relative;
+            top: 5px;
+            left: 10px;
+        } 
+        .four {
+            position: relative;
+            top:  -95px;
+            left: 300px;
+        } 
+        .five {
+            position: relative;
+            top: -95px;
+            left: 300px;
+        } 
+        .six {
+            position: relative;
+            top: -95px;
+            left: 300px;
+        } 
     }
 
     
@@ -140,13 +175,13 @@ function BrandingDivisions({ brand }) {
                   
                       <StyledContent>
                           <h3>{brand.name}</h3>
-                          <p className="definition">{brand.description}</p>
-                          <p>{brand.inclusion1}</p>
-                          <p>{brand.inclusion2}</p>
-                          <p>{brand.inclusion3}</p>
-                          <p>{brand.inclusion4}</p>
-                          <p>{brand.inclusion5}</p>
-                          <p>{brand.inclusion6}</p>
+                          <p className="description">{brand.description}</p>
+                          <p className="one">{brand.inclusion1}</p>
+                          <p className="two">{brand.inclusion2}</p>
+                          <p className="three">{brand.inclusion3}</p>
+                          <p className="Four">{brand.inclusion4}</p>
+                          <p className="five">{brand.inclusion5}</p>
+                          <p className="six">{brand.inclusion6}</p>
                          
                           <Animated>
                           

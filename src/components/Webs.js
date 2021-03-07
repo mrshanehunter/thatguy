@@ -96,11 +96,46 @@ const StyledContent = styled.div`
             top: 10px;
             left: 10px;
         }
-        a {
-            position: relative:
-            top: 20px;
-            left: 190px;
+        .description {
+            position: relative;
+            top: 10px;
+            left: 10px;
         }
+        .animated a {
+            position: relative;
+            top: -55px;
+            left: 35%;
+        }
+        .one {
+            position: relative;
+            top: 5px;
+            left: 10px;
+        } 
+        .two {
+            position: relative;
+            top: 5px;
+            left: 10px;
+        } 
+        .three {
+            position: relative;
+            top: 5px;
+            left: 10px;
+        } 
+        .four {
+            position: relative;
+            top:  -95px;
+            left: 300px;
+        } 
+        .five {
+            position: relative;
+            top: -95px;
+            left: 300px;
+        } 
+        .six {
+            position: relative;
+            top: -95px;
+            left: 300px;
+        } 
     }
 
     
@@ -123,8 +158,10 @@ function WebsiteDivisions({ web }) {
 
     return (
         <Container className="w-75 mt-3 d-flex justify-content-center align-items-center">
-            <StyledServiceContainer onMouseEnter={onMouseHoverEnter}
-                onMouseLeave={onMouseHoverLeave}
+            <StyledServiceContainer
+            onMouseEnter={onMouseHoverEnter}
+            onMouseLeave={onMouseHoverLeave}
+            
                 
                 
                 >
@@ -140,13 +177,13 @@ function WebsiteDivisions({ web }) {
                   
                       <StyledContent>
                           <h3>{web.name}</h3>
-                          <p className="definition">{web.description}</p>
-                          <p>{web.inclusion1}</p>
-                          <p>{web.inclusion2}</p>
-                          <p>{web.inclusion3}</p>
-                          <p>{web.inclusion4}</p>
-                          <p>{web.inclusion5}</p>
-                          <p>{web.inclusion6}</p>
+                          <p className="description">{web.description}</p>
+                          <p className="one">{web.inclusion1}</p>
+                          <p className="two">{web.inclusion2}</p>
+                          <p className="three">{web.inclusion3}</p>
+                          <p className="four">{web.inclusion4}</p>
+                          <p className="five">{web.inclusion5}</p>
+                          <p className="six">{web.inclusion6}</p>
                          
                           <Animated>
                         

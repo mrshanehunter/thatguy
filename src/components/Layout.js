@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container"
 import styled from "styled-components"
 import GlobalStyles from "../styles/GlobalStyles"
 import Footer from "./Footer"
+import Logo from "./Logo"
 
 import Header from "./Header"
 
@@ -19,7 +20,7 @@ const ContentContainer = styled.div`
 const StyledContentContainer = styled.div` 
   width: 90%;
   min-height: 90vh;
-  margin: 2rem auto;
+  margin: 1rem auto;
   background: transparent;
   flex: 1;
   align-items: center;
@@ -42,6 +43,7 @@ export default function Layout({ children }) {
       <GlobalStyles />
       <Container fluid className="d-flex m-1 justify-content-center align-content-center">
       <ContentContainer>
+        <Logo />
         <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <StyledContentContainer> 
         {children}

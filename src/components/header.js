@@ -2,9 +2,12 @@ import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import PropTypes from "prop-types"
 import Nav from "react-bootstrap/Nav"
+import Navbar from "react-bootstrap/Navbar"
+import Logo from "./Logo"
 
 const Header = ({ siteTitle, children }) => (
   <header>
+   
     <Nav className="justify-content-end">
       <Nav.Item>
         <AniLink paintDrip to="/home/" hex="#0f4c81" duration={0.5}>
@@ -26,7 +29,7 @@ const Header = ({ siteTitle, children }) => (
           contact
         </AniLink>
       </Nav.Item>
-    </Nav>
+  </Nav>
     <div className="graded"></div>
   </header>
 )

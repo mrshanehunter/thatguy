@@ -16,9 +16,7 @@ const HomePage = props => (
       style={{ width: `90%`, minHeight: `85vh` }}
     >
       <div className="w-100 mx-auto p-3" style={{ maxWidth: `400px` }}>
-        <div className="w-100 mb-4">
-          <Logo />
-        </div>
+       
 
         <div className="w-100 mb-3 p-5 text-center copy">
           <p>

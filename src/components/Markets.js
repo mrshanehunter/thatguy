@@ -67,6 +67,16 @@ const StyledContent = styled.div`
         top: 5px;
         left: 5px;
     }
+    .description {
+        color: var(--base);
+        font-family: "montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.6rem;
+        position: relative;
+        top: 5px;
+        left: 5px;
+     }
     p {
         color: var(--base);
         font-family: "montserrat", sans-serif;
@@ -74,8 +84,10 @@ const StyledContent = styled.div`
         font-weight: 500;
         font-size: 1.6rem;
         position: relative;
+        top: 5px;
         left: 5px;
-    }
+     }
+    
     
     a {
         cursor: pointer;
@@ -96,11 +108,46 @@ const StyledContent = styled.div`
             top: 10px;
             left: 10px;
         }
-        a {
-            position: relative:
-            top: 20px;
-            left: 190px;
+        .description {
+            position: relative;
+            top: 10px;
+            left: 10px;
         }
+        .animated a {
+            position: relative;
+            top: -55px;
+            left: 35%;
+        }
+        .one {
+            position: relative;
+            top: 5px;
+            left: 10px;
+        } 
+        .two {
+            position: relative;
+            top: 5px;
+            left: 10px;
+        } 
+        .three {
+            position: relative;
+            top: 5px;
+            left: 10px;
+        } 
+        .four {
+            position: relative;
+            top:  -95px;
+            left: 300px;
+        } 
+        .five {
+            position: relative;
+            top: -95px;
+            left: 300px;
+        } 
+        .six {
+            position: relative;
+            top: -95px;
+            left: 300px;
+        } 
     }
 
     
@@ -123,8 +170,10 @@ function MarketingDivisions({ market }) {
 
     return (
         <Container className="w-75 mt-3 d-flex justify-content-center align-items-center">
-            <StyledServiceContainer onMouseEnter={onMouseHoverEnter}
-                onMouseLeave={onMouseHoverLeave}
+            <StyledServiceContainer 
+            onMouseEnter={onMouseHoverEnter}
+            onMouseLeave={onMouseHoverLeave}
+           
                 
                 
                 >
@@ -141,12 +190,12 @@ function MarketingDivisions({ market }) {
                       <StyledContent>
                           <h3>{market.name}</h3>
                           <p className="description">{market.description}</p>
-                          <p>{market.inclusion1}</p>
-                          <p>{market.inclusion2}</p>
-                          <p>{market.inclusion3}</p>
-                          <p>{market.inclusion4}</p>
-                          <p>{market.inclusion5}</p>
-                          <p>{market.inclusion6}</p>
+                          <p className="one">{market.inclusion1}</p>
+                          <p className="two">{market.inclusion2}</p>
+                          <p className="three">{market.inclusion3}</p>
+                          <p className="four">{market.inclusion4}</p>
+                          <p className="five">{market.inclusion5}</p>
+                          <p className="six">{market.inclusion6}</p>
                          
                           <Animated>
                           <AniLink paintDrip to="/services/" hex="#0f4c81" duration={0.5}>

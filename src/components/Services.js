@@ -146,8 +146,11 @@ function ServiceStream({ stream }) {
 
     return (
         <Container className="w-75 mt-3 d-flex justify-content-center align-items-center">
-            <StyledServiceContainer onMouseEnter={onMouseHoverEnter}
-                onMouseLeave={onMouseHoverLeave}
+            <StyledServiceContainer
+            onMouseEnter={onMouseHoverEnter}
+            onMouseLeave={onMouseHoverLeave}
+            onTouchEnter={onMouseHoverEnter}
+            onTouchEnd={onMouseHoverLeave}
                 
                 
                 >
@@ -166,7 +169,7 @@ function ServiceStream({ stream }) {
                           <p className="definition">{stream.definition}</p>
                           <p className="benefit">{stream.benefit}</p>
                           <p className="why">{stream.why}</p>
-                          <Animated>
+                          <Animated animationIn="fadeIn" animationInDelay="10000">
                           <AniLink paintDrip to={`/services/${stream.slug}/`} hex="#0f4c81" duration={0.5}>
                               Click Here For More Details
                           </AniLink>
