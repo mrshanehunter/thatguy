@@ -1,9 +1,10 @@
-import React from "react";
-import { graphql } from "gatsby";
-import styled from "styled-components";
-import Layout from "../../components/Layout";
-import SEO from "../../components/SEOComp";
-import Markets from "../../components/Markets";
+import React from "react"
+import { graphql } from "gatsby"
+import styled from "styled-components"
+import Layout from "../../components/Layout"
+import SEO from "../../components/SEOComp"
+import Markets from "../../components/Markets"
+import MarketingSummary from "../../components/MarketingSummary"
 
 
 const StyledContainer = styled.div` 
@@ -15,13 +16,15 @@ const StyledContainer = styled.div`
     align-items: center;
 `;
 
-export default function WebsitePage({ data }) {
-  const markets = data.markets.nodes;
+export default function MarketingPage(props) {
+  const markets = props.data.markets.nodes;
+  const msummarys = props.data.msummarys.nodes;
 
   return( 
     <Layout>
       <SEO title="Marketing Strategy, Planning, Activation" />
     <StyledContainer>
+      <MarketingSummary msummarys={msummarys} />
       <Markets markets={markets}/>
     </StyledContainer>
     </Layout>
@@ -54,6 +57,20 @@ query marketsQuery {
         }
       }
     }
+    msummarys : allSanityMsummarys {
+      nodes {
+        id
+        description
+        image {
+          asset {
+            fluid(maxWidth: 700) {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
+      }
+
+    }  
   }
 
 `;

@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Layout from "../../components/Layout";
 import SEO from "../../components/SEOComp";
 import Webs from "../../components/Webs";
+import WebsiteSummary from "../../components/WebsiteSummary"
 
 
 const StyledContainer = styled.div` 
@@ -15,13 +16,15 @@ const StyledContainer = styled.div`
     align-items: center;
 `;
 
-export default function WebsitePage({ data }) {
-  const webs = data.webs.nodes;
+export default function WebsitePage(props) {
+  const webs = props.data.webs.nodes;
+  const wsummarys = props.data.wsummarys.nodes;
 
   return( 
     <Layout>
       <SEO title="Website Design & Development" />
     <StyledContainer>
+      <WebsiteSummary wsummarys={wsummarys} />
       <Webs webs={webs}/>
     </StyledContainer>
     </Layout>
@@ -53,6 +56,20 @@ query websQuery {
           }
         }
       }
+    }
+    wsummarys : allSanityWsummarys {
+      nodes {
+        id
+        description
+        image {
+          asset {
+            fluid(maxWidth: 700) {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
+      }
+
     }
   }
 

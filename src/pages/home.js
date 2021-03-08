@@ -2,9 +2,6 @@ import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Layout from "../components/Layout"
 import Container from "react-bootstrap/Container"
-import Branding from "../components/Branding"
-import Marketing from "../components/Marketing"
-import Website from "../components/Website"
 import SEO from "../components/SEOComp"
 
 
@@ -20,14 +17,17 @@ const HomePage = props => (
       
         <div className="w-100 mb-3 p-5 text-center copy">
           <p>
-            Although the site is currently being refreshed, it's business as
-            usual when it comes to helping you achieve your brand, marketing and
+            <AniLink paintDrip to="/about/" hex="#223275" duration={0.5}>
+              That Guy From Marketing
+            </AniLink>
+            {" "}has over fifteen years experience, gathered across a diverse range of 
+            industries and markets, for you to leverage in helping achieve your brand, marketing and
             company objectives.
           </p>
           <br />
           <p>
             To find out how That Guy From Marketing can help you build your
-            brand and create enduring customer connections, make{" "}
+            brand and create enduring customer connections, get in{" "}
             <AniLink paintDrip to="/contact/" hex="#080424" duration={0.5}>
               contact
             </AniLink>{" "}
@@ -35,15 +35,7 @@ const HomePage = props => (
           </p>
         </div>
 
-        <div className="w-75 mx-auto">
-          <Branding />
-        </div>
-        <div className="w-75 mx-auto">
-          <Marketing />
-        </div>
-        <div className="w-75 mx-auto">
-          <Website />
-        </div>
+        
       </div>
     </Container>
   </Layout>

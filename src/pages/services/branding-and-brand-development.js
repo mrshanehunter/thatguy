@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Layout from "../../components/Layout";
 import SEO from "../../components/SEOComp";
 import Brands from "../../components/Brands";
+import BrandSummary from "../../components/BrandSummary";
 
 
 const StyledContainer = styled.div` 
@@ -15,13 +16,15 @@ const StyledContainer = styled.div`
     align-items: center;
 `;
 
-export default function BrandingPage({ data }) {
-  const brands = data.brands.nodes;
+export default function BrandingPage(props) {
+  const brands = props.data.brands.nodes;
+  const bsummarys = props.data.bsummarys.nodes;
 
   return( 
     <Layout>
       <SEO title="Branding & Brand Development" />
     <StyledContainer>
+      <BrandSummary bsummarys={bsummarys} />
       <Brands brands={brands}/>
     </StyledContainer>
     </Layout>
@@ -54,6 +57,22 @@ query brandingsQuery {
         }
       }
     }
+    bsummarys : allSanityBsummarys {
+      nodes {
+        id
+        description
+        image {
+          asset {
+            fluid(maxWidth: 700) {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
+      }
+
+    }
   }
+  
 
 `;
+
