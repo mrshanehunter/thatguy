@@ -11,7 +11,7 @@ import Header from "./Header"
 
 const ContentContainer = styled.div`
   width: 90vw;
-  min-height: 100vh;
+  min-height: 90vh;
   margin: 2rem auto;
   display: flex;
   flex-direction: column;

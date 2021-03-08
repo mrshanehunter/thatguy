@@ -32,7 +32,7 @@ export default function ControlledCarousel() {
         setIndex(selectedIndex)
     }
     const slides = data.carousels.nodes
-    console.log(slides)
+    
     return (
         <>
         <Carousel activeIndex={index} onSelect={handleSelect}>

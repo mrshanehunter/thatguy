@@ -11,6 +11,7 @@ import brands from './brands';
 import markets from './markets';
 import webs from './webs';
 import carousels from './carousels';
+import abouts from './abouts';
 
 export default createSchema({
   // We name our schema
@@ -18,6 +19,6 @@ export default createSchema({
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
-    projects, streams, brands, markets, webs, carousels,
+    projects, streams, brands, markets, webs, carousels, abouts,
   ]),
 })

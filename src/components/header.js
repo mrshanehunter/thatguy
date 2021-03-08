@@ -2,8 +2,7 @@ import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import PropTypes from "prop-types"
 import Nav from "react-bootstrap/Nav"
-import Navbar from "react-bootstrap/Navbar"
-import Logo from "./Logo"
+
 
 const Header = ({ siteTitle, children }) => (
   <header>

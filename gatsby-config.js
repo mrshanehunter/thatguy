@@ -48,6 +48,14 @@ module.exports = {
         token: process.env.SANITY_TOKEN,
       },
     },
+    {
+      resolve: `gatsby-plugin-sanity-image`,
+      options: {
+        projectId: `weuctgl1`,
+        dataset: `production`,
+        token: process.env.SANITY_TOKEN,
+      }
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
