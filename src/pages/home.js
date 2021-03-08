@@ -5,6 +5,8 @@ import Container from "react-bootstrap/Container"
 import SEO from "../components/SEOComp"
 
 
+
+
 const HomePage = props => (
   <Layout>
     <SEO title="Home" />
@@ -34,6 +36,7 @@ const HomePage = props => (
             today.
           </p>
         </div>
+      
 
         
       </div>
