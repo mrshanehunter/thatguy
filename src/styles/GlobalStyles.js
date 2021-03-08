@@ -178,6 +178,38 @@ a {
   border: thin solid var(--highlight);
   background: var(--base);
 }
+.carousel-indicators {   
+  margin-bottom: -30px;
+}
+
+.carousel-control-next-icon {
+  position: absolute;
+  z-index: 3000;
+  bottom: 0;
+  right: 0;
+  margin-right: 35px;
+  margin-bottom: -30px;
+  // border: 2px ridge var(--highlight);
+  border-radius: 50%;
+  // background-color: rgba(07, 07, 07, 0.9);
+  background-size: 20px 20px;
+  
+  
+}  
+.carousel-control-prev-icon {
+  position: absolute;
+  z-index: 3000;
+  bottom: 0;
+  left: 0;
+  margin-left: 35px;
+  margin-bottom: -30px;
+  // border: 2px ridge var(--highlight);
+  border-radius: 50%;
+  // background-color: var(--highlight);
+  background-size: 20px 20px;
+  
+}  
+
 
 
 

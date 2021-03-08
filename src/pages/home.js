@@ -5,8 +5,8 @@ import Container from "react-bootstrap/Container"
 import Branding from "../components/Branding"
 import Marketing from "../components/Marketing"
 import Website from "../components/Website"
-import Logo from "../components/Logo"
 import SEO from "../components/SEOComp"
+
 
 const HomePage = props => (
   <Layout>
@@ -17,7 +17,7 @@ const HomePage = props => (
     >
       <div className="w-100 mx-auto p-3" style={{ maxWidth: `400px` }}>
        
-
+      
         <div className="w-100 mb-3 p-5 text-center copy">
           <p>
             Although the site is currently being refreshed, it's business as
