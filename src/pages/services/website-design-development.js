@@ -8,12 +8,22 @@ import WebsiteSummary from "../../components/WebsiteSummary"
 
 
 const StyledContainer = styled.div` 
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+`;
+
+const StyledServicesContainer = styled.div` 
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+   
+  
+
 `;
 
 export default function WebsitePage(props) {
@@ -23,10 +33,13 @@ export default function WebsitePage(props) {
   return( 
     <Layout>
       <SEO title="Website Design & Development" />
-    <StyledContainer>
+      <StyledContainer>
       <WebsiteSummary wsummarys={wsummarys} />
+      </StyledContainer>  
+      <StyledServicesContainer>
       <Webs webs={webs}/>
-    </StyledContainer>
+      </StyledServicesContainer>
+     
     </Layout>
   )
 }
