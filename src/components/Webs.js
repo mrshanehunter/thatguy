@@ -122,7 +122,7 @@ const StyledContent = styled.div`
     }
     @media (min-width: 768px) {
         width: 450px;
-        height: 350px;
+        height: 325px;
         h3 {
             position: relative;
             top: 10px;
@@ -136,23 +136,26 @@ const StyledContent = styled.div`
         }
         .animated a {
             position: relative;
-            top: -20px;
+            top: -25px;
             left: 35%;
         }
         .one {
             position: relative;
             top: 10px;
             left: 10px;
+            
         } 
         .two {
             position: relative;
             top: 10px;
             left: 10px;
+          
         } 
         .three {
             position: relative;
             top: 10px;
             left: 10px;
+           
         } 
         .four {
             position: relative;

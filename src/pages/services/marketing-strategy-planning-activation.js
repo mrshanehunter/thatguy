@@ -16,6 +16,12 @@ const StyledContainer = styled.div`
     align-items: center;
 `;
 
+const StyledServicesContainer = styled.div` 
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+`;
+
 export default function MarketingPage(props) {
   const markets = props.data.markets.nodes;
   const msummarys = props.data.msummarys.nodes;

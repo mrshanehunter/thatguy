@@ -9,7 +9,7 @@ import WebsiteSummary from "../../components/WebsiteSummary"
 
 const StyledContainer = styled.div` 
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 2rem ;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -21,9 +21,6 @@ const StyledServicesContainer = styled.div`
     width: 100%;
     margin: 0 auto;
     padding: 0;
-   
-  
-
 `;
 
 export default function WebsitePage(props) {

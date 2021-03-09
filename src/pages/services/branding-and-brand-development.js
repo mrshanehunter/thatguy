@@ -9,11 +9,17 @@ import BrandSummary from "../../components/BrandSummary";
 
 const StyledContainer = styled.div` 
     width: 95%;
-    margin: 0 auto;
+    margin: 0 auto 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+`;
+
+const StyledServicesContainer = styled.div` 
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
 `;
 
 export default function BrandingPage(props) {
@@ -24,9 +30,11 @@ export default function BrandingPage(props) {
     <Layout>
       <SEO title="Branding & Brand Development" />
     <StyledContainer>
-      <BrandSummary bsummarys={bsummarys} />
+            <BrandSummary bsummarys={bsummarys} />
+            </StyledContainer>
+            <StyledServicesContainer>
       <Brands brands={brands}/>
-    </StyledContainer>
+      </StyledServicesContainer>
     </Layout>
   )
 }
