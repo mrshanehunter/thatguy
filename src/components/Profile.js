@@ -24,7 +24,7 @@ const StyledImageContainer = styled.div`
     }
     img {
         float: left;
-        margin: 1rem;
+        margin: 2rem;
         
     }     
 `;

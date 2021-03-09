@@ -114,7 +114,7 @@ export default function ContactForm(props) {
         </Form.Group>
         <Button
           type="submit"
-          disable={loading}
+          disabled={loading}
           className="w-100 mt-4"
           style={{
             fontFamily: `timberline`,

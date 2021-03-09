@@ -33,7 +33,7 @@ export default function BrandingPage(props) {
 
 export const query = graphql` 
 query brandingsQuery {
-    brands: allSanityBrands {
+    brands: allSanityBrands(sort: {fields: name}) {
       nodes {
         id
         inclusion1

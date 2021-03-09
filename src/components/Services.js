@@ -6,16 +6,15 @@ import styled from "styled-components"
 import {Animated} from "react-animated-css"
 
 const StyledServiceContainer = styled.div`
-    width: 350px;
-    height: 350px;
+    width: 325px;
+    height: 325px;
     background: var(--base);
-    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     @media (min-width: 768px) {
-        width: 600px;
-        height: 250px;
+        width: 425px;
+        height: 425px;
     }
 
 `;
@@ -37,8 +36,8 @@ const StyledOverlay = styled.div`
         top: 10%;
     }
     @media (min-width: 768px) {
-        width: 600px;
-        height: 250px;
+        width: 400px;
+        height: 400px;
     }
     
 `;
@@ -97,8 +96,8 @@ const StyledContent = styled.div`
         left: 35px;
     }
     @media (min-width: 768px) {
-        width: 595px;
-        height: 245px;
+        width: 395px;
+        height: 395px;
         h3 {
             position: relative;
             top: 10px;
@@ -106,23 +105,28 @@ const StyledContent = styled.div`
         }
         .definition {
             position: relative;
-            top: 10px;
+            top: 12px;
             left: 10px;
+            width: 380px;
         }
         .benefit {
             position: relative;
             top: 10px;
             left: 10px;
+            width: 380px
         }
         .why {
             position: relative;
             top: 10px;
             left: 10px;
+            width: 380px;
+            margin-bottom: 10px;
         }
         a {
-            position: relative:
-            top: 20px;
-            left: 190px;
+            position: relative;
+            top: 95%;
+            left: 110px;
+            padding-top: 2rem;
         }
     }
 
@@ -149,8 +153,7 @@ function ServiceStream({ stream }) {
             <StyledServiceContainer
             onMouseEnter={onMouseHoverEnter}
             onMouseLeave={onMouseHoverLeave}
-            onTouchEnter={onMouseHoverEnter}
-            onTouchEnd={onMouseHoverLeave}
+         
                 
                 
                 >
@@ -169,11 +172,13 @@ function ServiceStream({ stream }) {
                           <p className="definition">{stream.definition}</p>
                           <p className="benefit">{stream.benefit}</p>
                           <p className="why">{stream.why}</p>
+                          <hr />
                           <Animated animationIn="fadeIn" animationInDelay="10000">
                           <AniLink paintDrip to={`/services/${stream.slug}/`} hex="#0f4c81" duration={0.5}>
-                              Click Here For More Details
+                              Let's Make It Happen
                           </AniLink>
                           </Animated>
+                          <hr />
                       </StyledContent>
                   
                  } 

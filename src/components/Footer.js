@@ -6,6 +6,7 @@ const FooterStyles = styled.footer`
   color: var(--gray);
   margin-top: 3rem;
   padding-bottom: 1rem;
+  font-size: 1.2rem;
 `
 
 const Footer = () => {

@@ -14,7 +14,7 @@ const ProjectsGrid = styled.div`
     grid-auto-rows: auto;
     
   }
-  @media (min-width: 1024px) {
+  @media (min-width: 1440px) {
     display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    grid-auto-rows: auto; 
@@ -22,11 +22,11 @@ const ProjectsGrid = styled.div`
 `;
 
 export const ServiceStyleFront = styled.div` 
-  width: 25rem;
-  height: 25rem;
+  width: 32.5rem;
+  height: 32.5rem;
   display: grid;
-  grid-template-rows: 25rem;
-  grid-template-columns: 25rem;
+  grid-template-rows: 32.5rem;
+  grid-template-columns: 32.5rem;
   background: var(--gray);
   box-shadow: 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
   justify-content: center;
@@ -43,18 +43,18 @@ export const ServiceStyleFront = styled.div`
 `;
 
 export const ServiceStyleBack = styled.div` 
-  width: 25rem;
-  height: 25rem;
+  width: 32.5rem;
+  height: 32.5rem;
   display: grid;
-  grid-template-rows: 25rem;
-  grid-template-columns: 25rem;
+  grid-template-rows: 32.5rem;
+  grid-template-columns: 32.5rem;
   border: 1px solid var(--accent);
   box-shadow: 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
 `;
 
 export const ServiceListBack = styled.div`
-  width: 25rem;
-  height: 25rem;
+  width: 32.5rem;
+  height: 32.5rem;
   padding: 0.75rem;
   display: subgrid;
   grid-template-rows: 4rem 1fr;
@@ -85,16 +85,16 @@ function ProjectItem({ project }) {
       <button className="w-100 flipBtnB" type="button" onClick={handleClick}>
       <ServiceListBack>
         <div className="d-flex-row text-left">
-         <h5 style={{textAlign: `left`, marginBottom: `0.25rem`, fontFamily: 'timberline', color: `#1976a5`, fontSize: `2rem`}}>
+         <h3 style={{textAlign: `left`, marginBottom: `0.25rem`, fontFamily: 'timberline', color: `#d9d9d9`, fontSize: `2.2rem`}}>
            <span>{project.client}</span>
-         </h5>
-         <h6 style={{textAlign: `left`, marginBottom: `0`, fontFamily: 'futura', color: `#8abdde`}}>
+         </h3>
+         <h4 style={{textAlign: `left`, marginBottom: `0`, fontFamily: 'futura', color: `#8abdde`}}>
            <span> {project.industry}</span>
-         </h6>
+         </h4>
          <hr style={{background: `#d9d9d9`, maxWidth: `75%`, marginRight: `25%`}}/>
-          <h6 style={{textAlign: `left`, marginTop: `0.25rem`, fontFamily: 'futura', textTransform: `uppercase`, color: `#8abdde`}}>
+          <h5 style={{textAlign: `left`, marginTop: `0.25rem`, fontFamily: 'futura', textTransform: `uppercase`, color: `#8abdde`}}>
             Services Provided:
-          </h6>
+          </h5>
         </div>
         <div style={{display: `grid`, gridTemplateColumns: `1fr 1fr`, gridAutoRows: `auto`, gridGap: `0.25rem` }}>
           <div style={{textAlign: `left`}} className="serviceP">

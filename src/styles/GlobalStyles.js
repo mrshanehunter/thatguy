@@ -166,6 +166,7 @@ a {
   font-weight: 500;
   font-style: normal;
   color: var(--gray);
+  font-size: 1.4rem;
 }
 
 .flipBtnF {

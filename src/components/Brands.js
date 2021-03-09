@@ -179,14 +179,14 @@ function BrandingDivisions({ brand }) {
                           <p className="one">{brand.inclusion1}</p>
                           <p className="two">{brand.inclusion2}</p>
                           <p className="three">{brand.inclusion3}</p>
-                          <p className="Four">{brand.inclusion4}</p>
+                          <p className="four">{brand.inclusion4}</p>
                           <p className="five">{brand.inclusion5}</p>
                           <p className="six">{brand.inclusion6}</p>
                          
                           <Animated>
                           
-                          <AniLink paintDrip to="/services/" hex="#8abdde" duration={0.5}>
-          Return to Services
+                          <AniLink paintDrip to="/contact/" hex="#8abdde" duration={0.5}>
+          Make It Happen
         </AniLink>
                           </Animated>
                       </StyledContent>
