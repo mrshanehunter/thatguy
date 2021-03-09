@@ -63,7 +63,7 @@ const StyledContent = styled.div`
         color: var(--base);
         position: relative;
         top: 5px;
-        left: 5px;
+        left: 10px;
     }
     p {
         color: var(--base);
@@ -71,10 +71,43 @@ const StyledContent = styled.div`
         font-style: normal;
         font-weight: 500;
         font-size: 1.6rem;
-        position: relative;
-        left: 5px;
-        width: 290px;
     }
+    .description {
+            position: relative;
+            top: 10px;
+            left: 10px;
+            width: 290px
+        }
+        .one {
+            position: relative;
+            top: 10px;
+            left: 10px;
+        } 
+        .two {
+            position: relative;
+            top: 5px;
+            left: 10px;
+        } 
+        .three {
+            position: relative;
+            top: 5px;
+            left: 10px;
+        } 
+        .four {
+            position: relative;
+            top: 5px;
+            left: 10px;
+        } 
+        .five {
+            position: relative;
+            top: 5px;
+            left: 10px;
+                   } 
+        .six {
+            position: relative;
+            top: 5px;
+            left: 10px;
+        } 
     
     a {
         cursor: pointer;
