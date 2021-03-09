@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Img from "gatsby-image"
-import Container from "react-bootstrap/Container"
 import styled from "styled-components"
 import {Animated} from "react-animated-css"
 

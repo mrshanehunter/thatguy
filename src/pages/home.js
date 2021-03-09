@@ -8,7 +8,7 @@ import SEO from "../components/SEOComp"
 import Services from "../components/Services"
 
 const StyledServiceContainer = styled.div` 
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -27,32 +27,30 @@ export default function HomePage(props){
     <SEO title="Home" />
     <Container
       className="d-flex-column align-items-center justify-content-center mx-auto logomark"
-      style={{ width: `90%`, minHeight: `85vh` }}
+      style={{ width: `100%`}}
     >
-     
-       
-      
-        <div className="w-100 mb-3 p-5 text-center copy" style={{maxWidth: `400px`, margin: `0 auto`}}>
-          <p>
-          
+      <div className="w-100 mb-3 p-5 text-center copy" style={{maxWidth: `400px`, margin: `0 auto`}}>
+        <p>
          Paragraph on visibility value and context and direct attention to the services below.
-          </p>
-          <br />
-          <p>
+        </p>
+        <br />
+        <p>
             To find out how That Guy From Marketing can help you build your
             brand and create enduring customer connections, get in{" "}
-            <AniLink paintDrip to="/contact/" hex="#080424" duration={0.5}>
-              contact
-            </AniLink>{" "}
+         <AniLink paintDrip to="/contact/" hex="#080424" duration={0.5}>
+          contact
+          </AniLink>{" "}
             today.
           </p>
-        </div>
-        <StyledServiceContainer>   
-               <Services streams={streams} /> 
-        </StyledServiceContainer>
+      </div>
+     
+      <StyledServiceContainer>   
+         <Services streams={streams} /> 
+      </StyledServiceContainer>
+      </Container>
 
      
-    </Container>
+   
   </Layout>
 )
 }

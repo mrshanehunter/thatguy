@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Img from "gatsby-image"
-import Container from "react-bootstrap/Container"
 import styled from "styled-components"
 import {Animated} from "react-animated-css"
 
@@ -48,7 +47,7 @@ const StyledOverlay = styled.div`
 
 const StyledContent = styled.div`
     width: 300px;
-    height: 450px;
+    height: 500px;
     background: var(--highlight);
     color: var(--base);
     border-radius: 1rem;
