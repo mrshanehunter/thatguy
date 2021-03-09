@@ -15,7 +15,7 @@ const StyledServiceContainer = styled.div`
 
     @media (min-width: 768px) {
         width: 600px;
-        height: 250px;
+        height: 450px;
     }
 
 `;
@@ -42,7 +42,7 @@ const StyledOverlay = styled.div`
     }
     @media (min-width: 768px) {
         width: 450px;
-        height: 450px;
+        height: 350px;
     }
    `;
 
@@ -74,6 +74,7 @@ const StyledContent = styled.div`
         font-size: 1.6rem;
         position: relative;
         left: 5px;
+        width: 290px;
     }
     
     a {
@@ -89,7 +90,7 @@ const StyledContent = styled.div`
     }
     @media (min-width: 768px) {
         width: 450px;
-        height: 450px;
+        height: 350px;
         h3 {
             position: relative;
             top: 10px;

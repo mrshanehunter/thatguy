@@ -6,56 +6,55 @@ import styled from "styled-components"
 import {Animated} from "react-animated-css"
 
 const StyledServiceContainer = styled.div`
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 450px;
     background: var(--base);
-    margin: 2rem auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    
+
     @media (min-width: 768px) {
         width: 600px;
-        height: 250px;
+        height: 450px;
     }
 
 `;
 
 const StyledOverlay = styled.div`
     width: 300px;
-    height: 300px;
+    height: 450px;
     background: var(--base);
     color: var(--highlight);
-    display: flex:
+    display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute:
+    position: relative;
     top: 0;
     left: 0;
     margin: 0 auto;
+    padding: 0;
     .gatsby-image-wrapper {
-        width: 200px;
-        height: 200px;
-        postion: relative;
-        top: 10%;
-        left: 15%;
+        width: 300px;
+        height: 300px;
+        position: relative;
+        top: 5%;
+        left: 0;
     }
     @media (min-width: 768px) {
-        width: 600px;
-        height: 250px;
+        width: 450px;
+        height: 350px;
     }
-    
-`;
+   `;
 
 const StyledContent = styled.div`
-    width: 295px;
-    height: 295px;
+    width: 300px;
+    height: 450px;
     background: var(--highlight);
     color: var(--base);
     border-radius: 1rem;
-    position: relative:
-    top: 5px;
-    left: 5px;
+    position: relative;
+    top: 0px;
+    left: 0px;
     margin: 0 auto;
     h3 {
         font-family: "montserrat", sans-serif;
@@ -75,6 +74,7 @@ const StyledContent = styled.div`
         font-size: 1.6rem;
         position: relative;
         left: 5px;
+        width: 290px;
     }
     
     a {
@@ -85,12 +85,12 @@ const StyledContent = styled.div`
         font-weight: 500;
         font-size: 1.6rem;
         position: relative;
-        top: 10px;
-        left: 35px;
+        top: 20px;
+        left: 85px;
     }
     @media (min-width: 768px) {
-        width: 595px;
-        height: 245px;
+        width: 450px;
+        height: 350px;
         h3 {
             position: relative;
             top: 10px;
@@ -100,46 +100,48 @@ const StyledContent = styled.div`
             position: relative;
             top: 10px;
             left: 10px;
+            width: 420px
         }
         .animated a {
             position: relative;
-            top: -55px;
+            top: -20px;
             left: 35%;
         }
         .one {
             position: relative;
-            top: 5px;
+            top: 10px;
             left: 10px;
         } 
         .two {
             position: relative;
-            top: 5px;
+            top: 10px;
             left: 10px;
         } 
         .three {
             position: relative;
-            top: 5px;
+            top: 10px;
             left: 10px;
         } 
         .four {
             position: relative;
-            top:  -95px;
-            left: 300px;
+            top: -90px;
+            left: 250px;
         } 
         .five {
             position: relative;
-            top: -95px;
-            left: 300px;
+            top: -90px;
+            left: 250px;
         } 
         .six {
             position: relative;
-            top: -95px;
-            left: 300px;
+            top: -90px;
+            left: 250px;
         } 
     }
 
     
 `;
+
 
 
 function BrandingDivisions({ brand }) {
@@ -157,7 +159,7 @@ function BrandingDivisions({ brand }) {
     }
 
     return (
-        <Container className="w-75 mt-3 d-flex justify-content-center align-items-center">
+       
             <StyledServiceContainer onMouseEnter={onMouseHoverEnter}
                 onMouseLeave={onMouseHoverLeave}
                 
@@ -195,7 +197,7 @@ function BrandingDivisions({ brand }) {
 
                 </StyledServiceContainer>
 
-        </Container>
+     
     )
                 }
 
