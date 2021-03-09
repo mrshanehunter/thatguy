@@ -16,6 +16,12 @@ export default {
             description: 'Brief Description of the Service',
           },
           {
+            name: 'sequence',
+            title: 'Sequence for Ordering Display',
+            type: 'number',
+            description: 'Order the element to display first 1 etc ...',
+          },
+          {
             name: 'image',
             title: 'Service Icon Image',
             type: 'image',

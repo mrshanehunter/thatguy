@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { graphql} from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Layout from "../components/Layout"
@@ -6,21 +6,33 @@ import Container from "react-bootstrap/Container"
 import styled from "styled-components"
 import SEO from "../components/SEOComp"
 import Services from "../components/Services"
+import ServicesMbl from "../components/ServicesMbl"
 
 const StyledServiceContainer = styled.div` 
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  @media (min-width: 1440px) {
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 1500px) {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 `
 
 
 export default function HomePage(props){
+  const [width, setWidth] =useState(window.innerWidth);
+  const breakpoint = 1400;
+
+  useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth)
+    window.addEventListener("resize", handleWindowResize);
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
+
   const streams = props.data.streams.nodes;
   return(
   <Layout>
@@ -45,7 +57,8 @@ export default function HomePage(props){
       </div>
      
       <StyledServiceContainer>   
-         <Services streams={streams} /> 
+        { width < breakpoint ? <ServicesMbl streams={streams} /> :  <Services streams={streams} /> }
+  
       </StyledServiceContainer>
       </Container>
 
@@ -58,7 +71,7 @@ export default function HomePage(props){
 
 export const query = graphql` 
 query streamsQuery {
-    streams: allSanityStreams{
+    streams: allSanityStreams(sort: {fields: name}) {
         nodes {
           id
           name
@@ -66,6 +79,7 @@ query streamsQuery {
           why
           benefit
           slug
+          event_key
           image {
               asset {
                   fixed(width: 500, height: 250) {

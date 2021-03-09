@@ -16,6 +16,12 @@ export default {
       description: 'A brief definition of what the service stream covers',
     },
     {
+      name: 'event_key',
+      title: 'Event Key',
+      type: 'string',
+      description: 'Sequentially ordered number starting at 0 for mobile display',
+    },
+    {
       name: 'slug',
       title: 'Slug',
       type: 'string',

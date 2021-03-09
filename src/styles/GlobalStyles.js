@@ -211,6 +211,50 @@ a {
   
 }  
 
+.SSMbl.card-body{
+  background: var(--highlight);
+  border-radius: 1rem;
+  a {
+    cursor: pointer;
+    margin: 0 auto;
+    color: var(--classic);
+    font-size: 1.6rem;
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+  }
+
+.SSMbl1.card-header {
+  .gatsby-image-wrapper {
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+.SSMbl.card-header{
+  .gatsby-image-wrapper {
+    width: 50%;
+    height: 50%;
+  }
+} 
+.SSMbl.card-title {
+  font-family: "montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--base);
+}
+ .SSMbl.card-text {
+  font-family: "montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color:  var(--base);
+}
+
+}
+
 
 
 

@@ -5,21 +5,14 @@ import styled from "styled-components";
 
 
 const ProjectsGrid = styled.div`
+  margin: 2rem auto;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: 1fr;
-  grid-gap: 4rem;
-  @media (min-width: 768px) {
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: auto;
-    
-  }
-  @media (min-width: 1440px) {
-    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   grid-auto-rows: auto; 
-  }
-`;
+  grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  `;
 
 export const ServiceStyleFront = styled.div` 
   width: 32.5rem;

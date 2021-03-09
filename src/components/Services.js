@@ -6,27 +6,18 @@ import styled from "styled-components"
 import {Animated} from "react-animated-css"
 
 const StyledServiceContainer = styled.div`
-    width: 300px;
-    height: 500px;
+    width: 40rem;
+    height: 43rem;
     background: var(--base);
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    @media (min-width: 768px) {
-        width: 425px;
-        height: 425px;
-    }
-
+    margin: 0 2rem;
+  
 `;
 
 const StyledOverlay = styled.div`
-    width: 300px;
-    height: 500px;
+    width: 40rem;
+    height: 43rem;
     background: var(--base);
     color: var(--highlight);
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     position: relative;
     top: 0;
     left: 0;
@@ -36,22 +27,18 @@ const StyledOverlay = styled.div`
         position: relative;
         top: 10%;
     }
-    @media (min-width: 768px) {
-        width: 400px;
-        height: 400px;
-    }
-    
+      
 `;
 
 const StyledContent = styled.div`
-    width: 300px;
-    height: 500px;
+    width: 40rem;
+    height: 43rem;
     background: var(--highlight);
     color: var(--base);
     border-radius: 1rem;
     position: relative;
     top: 5px;
-    left: 5px;
+    left: 10px;
     margin: 0 auto;
     h3 {
         font-family: "montserrat", sans-serif;
@@ -61,7 +48,8 @@ const StyledContent = styled.div`
         color: var(--base);
         position: relative;
         top: 5px;
-        left: 5px;
+        left: 10px;
+        font-size: 2rem;
     }
     p {
         color: var(--base);
@@ -73,20 +61,20 @@ const StyledContent = styled.div`
     .definition {
         position: relative;
         top: 5px;
-        left: 5px;
-        width: 290px;
+        left: 10px;
+        width: 380px;
     }
     .benefit {
         position: relative;
         top: 5px;
-        left: 5px;
-        width: 290px;
+        left: 10px;
+        width: 380px;
     }
     .why {
         position: relative;
         top: 5px;
         left: 5px;
-        width: 290px;
+        width: 380px;
     }
     a {
         cursor: pointer;
@@ -97,43 +85,8 @@ const StyledContent = styled.div`
         font-size: 1.6rem;
         position: relative;
         top: 3px;
-        left: 55px;
+        left: 25%;
     }
-    @media (min-width: 768px) {
-        width: 395px;
-        height: 395px;
-        h3 {
-            position: relative;
-            top: 10px;
-            left: 10px;
-        }
-        .definition {
-            position: relative;
-            top: 12px;
-            left: 10px;
-            width: 380px;
-        }
-        .benefit {
-            position: relative;
-            top: 10px;
-            left: 10px;
-            width: 380px
-        }
-        .why {
-            position: relative;
-            top: 10px;
-            left: 10px;
-            width: 380px;
-            margin-bottom: 10px;
-        }
-        a {
-            position: relative;
-            top: 95%;
-            left: 110px;
-            padding-top: 2rem;
-        }
-    }
-
     
 `;
 
@@ -170,7 +123,7 @@ function ServiceStream({ stream }) {
                         <p className="benefit">{stream.benefit}</p>
                         <p className="why">{stream.why}</p>
                         <hr />
-                        <Animated animationIn="fadeIn" animationInDelay={3000}>
+                        <Animated animationIn="fadeIn" animationInDelay={2000}>
                             <AniLink paintDrip to={`/services/${stream.slug}/`} hex="#0f4c81" duration={0.5}>
                                 Let's Make It Happen
                              </AniLink>

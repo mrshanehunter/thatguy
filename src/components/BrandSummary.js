@@ -33,7 +33,7 @@ function Summary({ bsummary }) {
 }
 
 export default function BrandSummary({ bsummarys }) {
-    console.log(bsummarys)
+   
     return (
         <>
         {bsummarys.map((bsummary) => (

@@ -5,23 +5,20 @@ import styled from "styled-components"
 import {Animated} from "react-animated-css"
 
 const StyledServiceContainer = styled.div`
-    width: 300px;
-    height: 600px;
+    width: 40rem;
+    height: 40rem;
     background: var(--base);
     margin: 0 auto;
     padding: 0;
     
 
-    @media (min-width: 768px) {
-        width: 600px;
-        height: 450px;
-    }
+   
 
 `;
 
 const StyledOverlay = styled.div`
-    width: 300px;
-    height: 600px;
+    width: 40rem;
+    height: 40rem;
     background: var(--base);
     color: var(--highlight);
     display: flex;
@@ -33,21 +30,18 @@ const StyledOverlay = styled.div`
     margin: 0 auto;
     padding: 0;
     .gatsby-image-wrapper {
-        width: 300px;
-        height: 300px;
+        width: 50%;
+        height: 50%;
         position: relative;
-        top: 5%;
+        top: 0;
         left: 0;
     }
-    @media (min-width: 768px) {
-        width: 450px;
-        height: 350px;
-    }
+    
    `;
 
 const StyledContent = styled.div`
-    width: 300px;
-    height: 600px;
+    width: 40rem;
+    height: 40rem;
     background: var(--highlight);
     color: var(--base);
     border-radius: 1rem;
@@ -62,53 +56,53 @@ const StyledContent = styled.div`
         font-size: 1.6rem;
         color: var(--base);
         position: relative;
-        top: 5px;
-        left: 10px;
+        top: 1rem;
+        left: 1rem;
     }
     p {
         color: var(--base);
         font-family: "montserrat", sans-serif;
         font-style: normal;
         font-weight: 500;
-        font-size: 1.6rem;
-       
+        font-size: 1.6rem
     }
     .description {
             position: relative;
-            top: 10px;
-            left: 10px;
-            width: 290px
+            top: 1rem;
+            left: 1rem;
+            width: 37.5rem
         }
-    .one {
+        .one {
             position: relative;
-            top: 10px;
-            left: 10px;
+            top: 1rem;
+            left: 1rem;
         } 
         .two {
             position: relative;
-            top: 5px;
-            left: 10px;
+            top: 0.5rem;
+            left: 1rem;
         } 
         .three {
             position: relative;
-            top: 5px;
-            left: 10px;
+            top: 0.5rem;
+            left: 1rem;
         } 
         .four {
             position: relative;
-            top: 5px;
-            left: 10px;
+            top: -9.25rem;
+            left: 50%;
         } 
         .five {
             position: relative;
-            top: 5px;
-            left: 10px;
+            top: -9.5rem;
+            left: 50%;
         } 
         .six {
             position: relative;
-            top: 5px;
-            left: 10px;
+            top: -9.5rem;
+            left: 50%;
         } 
+
     
     a {
         cursor: pointer;
@@ -118,60 +112,10 @@ const StyledContent = styled.div`
         font-weight: 500;
         font-size: 1.6rem;
         position: relative;
-        top: 20px;
-        left: 85px;
+        top: -8rem;
+        left: 30%
     }
-    @media (min-width: 768px) {
-        width: 450px;
-        height: 400px;
-        h3 {
-            position: relative;
-            top: 10px;
-            left: 10px;
-        }
-        .description {
-            position: relative;
-            top: 10px;
-            left: 10px;
-            width: 420px
-        }
-        .animated a {
-            position: relative;
-            top: -65px;
-            left: 35%;
-        }
-        .one {
-            position: relative;
-            top: 10px;
-            left: 10px;
-        } 
-        .two {
-            position: relative;
-            top: 10px;
-            left: 10px;
-        } 
-        .three {
-            position: relative;
-            top: 10px;
-            left: 10px;
-        } 
-        .four {
-            position: relative;
-            top: -90px;
-            left: 250px;
-        } 
-        .five {
-            position: relative;
-            top: -90px;
-            left: 250px;
-        } 
-        .six {
-            position: relative;
-            top: -90px;
-            left: 250px;
-        } 
-    }
-
+   
     
 `;
 
