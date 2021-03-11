@@ -13,7 +13,7 @@ const StyledSummary = styled.div`
     }
     p {
         color: var(--gray);
-        font-size: 1.6rem;
+        font-size: clamp(1.4rem, 1.2vw, 2rem);
         font-family: "montserrat", sans-serif;
         font-style: normal;
         font-weight: 500;

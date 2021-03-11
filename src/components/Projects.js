@@ -61,7 +61,7 @@ function ProjectItem({ project }) {
     setIsFlipped(!isFlipped);
   }
   return (
-    <ReactCardFlip isFlipped={isFlipped} flipDirection="vetical">
+    <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
       <>
       <ServiceStyleFront>
       <button

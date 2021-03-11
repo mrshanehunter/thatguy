@@ -12,7 +12,14 @@ const StyledContainer = styled.div`
     font-style: normal;
     font-weight: 500;
     color: var(--gray);
-    font-size: 1.6rem;
+    font-size: clamp(1.4rem, 1.2vw, 2rem);
+    }
+    h6 {
+    font-family: montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: var(--classic);
+    font-size: 1.2rem;    
     }
 `;
 
@@ -38,7 +45,7 @@ function ProfileDetails({ about }) {
           
            <StyledImageContainer>
               
-           <p>{about.para3} 
+           <p>{about.para2} 
            
           
             <Image {...about.image}
@@ -47,7 +54,9 @@ function ProfileDetails({ about }) {
             style={{height: `20rem`, width: `20rem`, borderRadius: `50%`, border: `0.25rem solid var(--highlight)`}}
             alt="Image of That Guy From Marketing"
             />
-            {about.para4}
+            {" "}
+            <br />
+            {about.para3}
             <br/>
             {about.para4}
 
@@ -56,9 +65,9 @@ function ProfileDetails({ about }) {
            
             
            
-            <p>{about.para4}</p>
+            <p>{about.para5}</p>
            
-          
+          <h6>* a Unilever lesson that has not been discarded</h6>
         </StyledContainer>
     )
 }

@@ -85,6 +85,9 @@ a {
 }
 
 .copy p {
+  font-family: "montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: clamp(1.4rem, 1.2vw, 2rem);
   color: var(--gray);
 }
