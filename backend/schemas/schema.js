@@ -17,6 +17,9 @@ import msummarys from './msummarys';
 import wsummarys from './wsummarys';
 import definitions from "./definitions";
 import questions from "./questions";
+import policys from "./policys";
+import sections from "./sections";
+import paragraphs from "./paragraphs";
 
 export default createSchema({
   // We name our schema
@@ -24,6 +27,20 @@ export default createSchema({
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
-    projects, streams, brands, markets, webs, carousels, abouts, bsummarys, msummarys, wsummarys, definitions, questions,
+    projects,
+    streams, 
+    brands, 
+    markets, 
+    webs, 
+    carousels, 
+    abouts, 
+    bsummarys, 
+    msummarys, 
+    wsummarys, 
+    definitions, 
+    questions,
+    policys,
+    sections,
+    paragraphs,
   ]),
 })
