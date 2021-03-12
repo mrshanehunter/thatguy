@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-const StyledPrivacyContainer = styled.div`
+const StyledTermsContainer = styled.div`
     width: 90%;
     margin: 0 auto;
     p {
@@ -10,7 +10,7 @@ const StyledPrivacyContainer = styled.div`
     
 `;
 
-const StyledPrivacyHeader = styled.div` 
+const StyledTermsHeader = styled.div` 
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -26,7 +26,7 @@ const StyledPrivacyHeader = styled.div`
     }
 `;
 
-const StyledPolicySection = styled.div` 
+const StyledTermsSection = styled.div` 
     width: 90%;
     margin: 0 auto;
     h5 {
@@ -41,51 +41,51 @@ const StyledPolicySection = styled.div`
 
 
 
-function PolicyHeader({ privacy }) {
+function TermsHeader({ term }) {
     return (
-        <StyledPrivacyHeader>
+        <StyledTermsHeader>
         <div>
-            <h4>{privacy.name}</h4>
-            <h5>LAST UPDATED: {privacy.upd}</h5>
+            <h4>{term.name}</h4>
+            <h5>LAST UPDATED: {term.upd}</h5>
         </div>
         <div>
-            <p>{privacy.statement}</p>
+            <p>{term.statement}</p>
         </div>
-        </StyledPrivacyHeader>
+        </StyledTermsHeader>
     )
 }
 
-function PolicyPara(props) {
+function TermsPara(props) {
     console.log("policy", props);
-    if (props.id === props.para.sectRef) {
+    
+    if (props.id === props.para.sectRef && props.policy === "Terms & Conditions") {
         return (
             <p key={props.para.id}>{props.para.sectRef}.{props.para.paraNo}. {props.para.paraText}</p>
         )
     } else {
         return null;
     }
-}
     
+}
 
-
-function PolicyContent({ sects, paras }) {
+function TermsContent({ sects, paras }) {
   console.log(sects);
     return (
        <>
-       <StyledPolicySection>
+       <StyledTermsSection>
         {sects.map((sect) => (
             
             <div key={sect.id}>
                 <h5>{sect.sectNo}. {sect.sectHead}</h5>
                 {paras.map((para) => (
                    
-              <PolicyPara key={para.id} id={sect.sectNo} para={para} />
+              <TermsPara key={para.id} id={sect.sectNo} policy={sect.policyRef} para={para} />
 
                
                 ))}
             </div>
         ))}
-       </StyledPolicySection>
+       </StyledTermsSection>
        </>
    )
            
@@ -93,23 +93,22 @@ function PolicyContent({ sects, paras }) {
 }
 
 
-export default function PrivacyPolicy(props) {
-    console.log(props)
-    const privacys = props.props.data.allSanityPolicys.nodes;
+export default function TermsPolicy(props) {
+    const terms = props.props.data.allSanityPolicys.nodes;
     const paras = props.props.data.allSanityParagraphs.nodes;
     const sects = props.props.data.allSanitySections.nodes;
     
     return (
-        <StyledPrivacyContainer>
+        <StyledTermsContainer>
     <div>
-        {privacys.map((privacy) => (
-        <PolicyHeader key={privacy.id} privacy={privacy} />
+        {terms.map((term) => (
+        <TermsHeader key={term.id} term={term} />
         ))}
     </div>
     <div>
-        <PolicyContent sects={sects} paras={paras} />
+        <TermsContent sects={sects} paras={paras} />
         
         </div> 
-        </StyledPrivacyContainer>
+        </StyledTermsContainer>
     )
 }

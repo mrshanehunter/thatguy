@@ -16,6 +16,12 @@ export default {
           description: 'The actual paragraph text / copy',
         },
         {
+          name: 'sectRef',
+          title: 'Section Reference Number',
+          type: 'number',
+          description: 'The Section Number this paragraph belongs to',
+        },
+        {
           name: 'sections',
           type: 'reference',
           to: [

@@ -2,23 +2,23 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import SEO from "../components/SEOComp"
-import PrivacyPolicy from "../components/PrivacyPolicy"
+import TermsPolicy from "../components/TermsPolicy"
 
-export default function PrivacyPage(props) {
+export default function TermsPage(props) {
 
     return (
         <Layout>
-        <SEO title="Privacy Policy" />
+        <SEO title="Terms and Conditions" />
         <>
-            <PrivacyPolicy props={props} />
+            <TermsPolicy props={props} />
         </> 
          </Layout>
     )
 }
 
 export const query = graphql` 
-query myQuery {
-    allSanityPolicys(filter: {name: {eq: "Privacy Policy"}}) {
+query termsQuery {
+    allSanityPolicys(filter: {name: {eq: "Terms & Conditions"}}) {
         nodes {
           upd
           statement
@@ -26,7 +26,7 @@ query myQuery {
           id
         }
       }
-      allSanitySections(filter: {policyRef: {eq: "Privacy Policy"}}, sort: {fields: sectNo}) {
+      allSanitySections(filter: {policyRef: {eq: "Terms & Conditions"}}, sort: {fields: sectNo}) {
         nodes {
           id
           sectNo
@@ -34,7 +34,7 @@ query myQuery {
           policyRef
         }
       }
-      allSanityParagraphs(filter: {sections: {policyRef: {eq: "Privacy Policy"}}},sort: {fields: paraNo}) {
+      allSanityParagraphs(filter: {sections: {policyRef: {eq: "Terms & Conditions"}}},sort: {fields: paraNo})  {
         nodes {
           paraNo
           paraText

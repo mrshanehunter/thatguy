@@ -16,6 +16,12 @@ export default {
          description: 'The name of the section',
         },
         {
+         name: 'policyRef',
+         title: 'Policy Reference',
+         type: 'string',
+         description: 'Must be an exact match to the name of the policy it belongs to',
+        },
+        {
           name: 'policys',
           type: 'reference',
           to: [
