@@ -5,13 +5,12 @@ import styled from "styled-components"
 const FooterStyles = styled.footer`
   text-align: center;
   color: var(--gray);
-  margin-top: 3rem;
   padding-bottom: 1rem;
   font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
   width: 75%;
-  margin: 0 auto;
+  margin: 3rem auto;
 `
 
 const Footer = () => {

@@ -12,6 +12,7 @@ const ProjectsGrid = styled.div`
   grid-gap: 3rem;
   justify-content: center;
   align-items: center;
+  justify-items: center;
   `;
 
 export const ServiceStyleFront = styled.div` 

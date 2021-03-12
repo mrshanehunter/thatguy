@@ -1,38 +1,53 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
-import Definitions from "./Definitions"
+
+import DefinitionsCarousel3 from "./DefinitionsCarousel3"
 import Questions from "./Questions"
+import DefinitionsCarousel from "./DefinitionsCarousel"
 
 const StyledContainer = styled.div`
     width: 100%;
     margin: 0 auto;    
 `;
 const StyledDefinitionsContainer = styled.div`
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    @media (min-width: 768px) {
-        display: flex;
-        flex-direction: row;
+    align-items-center;
+    @media (min-width: 1024px) {
+        width: 68rem;
+        margin: 0 auto;
+        
     }
 `;
 const StyledQuestionsContainer = styled.div`
     width: 90%;
     margin: 0 auto;
+    @media (min-width: 1024px) {
+        width: 68rem;
+        margin: 0 auto;
+    }
 `;
 
 export default function HomePageVis(props) {
-    console.log(props);
-  const questions = props.props.data.questions.nodes;
-  const definitions = props.props.data.definitions.nodes;
+const [width, setWidth] =useState(window.innerWidth);
+const breakpoint = 1024;
+const questions = props.props.data.questions.nodes;
+ 
+useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth)
+    window.addEventListener("resize", handleWindowResize);
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
+
+
 
     return (
         <>
         <StyledContainer>
         <StyledDefinitionsContainer>    
-                    <Definitions definitions={definitions} />
+        { width < breakpoint ? <DefinitionsCarousel /> :  <DefinitionsCarousel3 />} 
         </StyledDefinitionsContainer>
         <StyledQuestionsContainer>
            <Questions questions={questions} />

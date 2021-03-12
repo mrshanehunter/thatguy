@@ -90,7 +90,7 @@ export default function HomePage(props){
 
 
 export const query = graphql` 
-query streamsQueryAndDefinitionsQueryAndQuestionsQueryAnd {
+query streamsQueryAndQuestionsQueryAnd {
     streams: allSanityStreams(sort: {fields: name}) {
         nodes {
           id
@@ -113,15 +113,6 @@ query streamsQueryAndDefinitionsQueryAndQuestionsQueryAnd {
           
         }
       }
-    definitions: allSanityDefinitions(sort: {fields: sequence}) {
-      nodes {
-        id
-        sequence
-        name
-        type
-        def
-      }
-    }
     questions: allSanityQuestions{
       nodes {
         id 

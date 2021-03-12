@@ -11,7 +11,7 @@ export default function ProjectsPage({ data }) {
   return( 
     <Layout>
       <SEO title="Projects" />
-    <Container className="mt-4" style={{ maxWidth: `90%`, margin: `0 auto`}}>
+    <Container className="mt-4 justify-contents-center" style={{ maxWidth: `90%`, margin: `0 auto`}}>
       <Projects projects={projects}/>
     </Container>
     </Layout>

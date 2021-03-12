@@ -5,9 +5,11 @@ import Container from "react-bootstrap/Container"
 import Layout from "../components/Layout"
 import SEO from "../components/SEOComp"
 
+
 const ThanksPage = () => (
   <Layout>
     <SEO title="Thanks" />
+    
     <Container
       className="d-flex justify-content-center align-items-center"
       style={{ minHeight: `85vh` }}
