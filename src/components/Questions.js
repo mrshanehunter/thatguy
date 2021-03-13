@@ -1,6 +1,7 @@
 import React from "react"
 import AniLink from "gatsby-plugin-transition-link/Anilink"
 import styled from "styled-components"
+import QuestionSet from "./QuestionSet"
 
 
 const StyledContainer = styled.div` 
@@ -15,15 +16,16 @@ const StyledQuestions = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 2rem;
+    
+    margin: 0 auto;
 
-    @media (min-width: 768px) {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 2rem 0;
-    }    
+    // @media (min-width: 768px) {
+    // width: 100%;
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // padding: 2rem 0;
+    // }    
 `;
 
 const StyledQuestionBox = styled.div `
@@ -54,45 +56,22 @@ font-style: normal;
 
 
 
- function HPQuery({ question }) {
-   
-
-
-    return (
-        <StyledContainer>
-        <StyledQuestions>    
-       <StyledQuestionBox><p>{question.question1}</p></StyledQuestionBox>
-      <StyledQuestionBox> <p>{question.question2}</p></StyledQuestionBox>
-       <StyledQuestionBox><p>{question.question3}</p></StyledQuestionBox>
-       <StyledQuestionBox><p>{question.question4}</p></StyledQuestionBox>
-       </StyledQuestions>
-        <br />
-        <StyledStatement>
-        <p>Visibility gets blamed, value shamed, and "marketing" painted as one of the dark arts.</p>
-        </StyledStatement>
-<StyledStatement>
-           
-          
-    
-        
-        
-        <p>If any of these scenarios feels familiar, {<AniLink paintDrip to="/contact/" hex="#0f4c81" duration={0.5} >let's chat!</AniLink>}</p>
-        </StyledStatement>
-   
-        
-        </StyledContainer>
-    )
-}
+ 
 
 export default function Questions({ questions }) {
-    return(
+    return (
     <>
-    {questions.map((question) => (
-        <HPQuery key={question.id} question={question} />
-    ))
-
-    }
-
+        <StyledContainer>
+            <StyledQuestions>   
+                <QuestionSet />
+            </StyledQuestions>
+            <StyledStatement>
+                <p>Visibility gets blamed, value shamed, and "marketing" painted as one of the dark arts.</p>
+            </StyledStatement>
+            <StyledStatement>
+                <p>If any of these scenarios feels familiar, {<AniLink paintDrip to="/contact/" hex="#0f4c81" duration={0.5} >let's chat!</AniLink>}</p>   
+            </StyledStatement>
+        </StyledContainer>
     </>
 )
 }

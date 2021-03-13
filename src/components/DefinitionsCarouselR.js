@@ -40,7 +40,7 @@ export default function DefinitionsCarouselR() {
 
 
 return (
-  <Carousel defaultWait={4500} maxTurns={100}>
+  <Carousel defaultWait={3500} maxTurns={100}>
     <Slide right>
       <div className="w-100 d-flex align-items-center justify-content-center" style={{height: `100%`, background: `#223275`}}>
         
