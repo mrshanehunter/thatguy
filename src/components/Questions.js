@@ -33,7 +33,7 @@ const StyledQuestionBox = styled.div `
         font-family: "montserrat", sans-serif;
         font-weight: 500;
         font-style: normal;
-        font-size: clamp(1.4rem, 1.2vw, 2rem);
+        font-size: clamp(1.4rem, 1.2vw, 1.8rem);
         margin: 1rem;
     }
     @media (min-width: 768px) {
@@ -45,7 +45,7 @@ const StyledQuestionBox = styled.div `
 
 const StyledStatement = styled.div` 
 color: var(--highlight);
-font-size: clamp(1.4rem, 1.2vw, 2rem);
+font-size: clamp(1.4rem, 1.2vw, 1.8rem);
 text-align: center;
 font-family: "montserrat", sans-serif;
 font-weight: 500;

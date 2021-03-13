@@ -59,7 +59,7 @@ h3 {
 }
 
 .nav-item {
-  font-size: clamp(1.6rem, 1.3vw, 2rem);
+  font-size: clamp(1.6rem, 1.3vw, 1.8rem);
   margin-bottom: 1rem;
   margin-right: 2vw;
   :nth-child(4) {
@@ -81,14 +81,15 @@ a {
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   height: 5px;
-  background-image: linear-gradient(to right, rgba(217,217,217,0), rgba(217,217,217, 1))
+  background: rgba(0,0,0, 0);
+background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(217,217,217,0.75) 45%, rgba(217,217,217,1) 100%);
 }
 
 .copy p {
   font-family: "montserrat", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: clamp(1.4rem, 1.2vw, 2rem);
+  font-size: clamp(1.4rem, 1.2vw, 1.8rem);
   color: var(--gray);
 }
 
@@ -104,7 +105,7 @@ a {
   font-family: "montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: clamp(1.4rem, 1.2vw, 2rem);
+  font-size: clamp(1.4rem, 1.2vw, 1.8rem);
 }
 
 .form-group label {
@@ -112,7 +113,7 @@ a {
   font-family: "montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: clamp(1.4rem, 1.2vw, 2rem);
+  font-size: clamp(1.4rem, 1.2vw, 1.8rem);
 }
 
 .form-group textarea {
@@ -121,12 +122,12 @@ a {
   font-family: "montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: clamp(1.4rem, 1.2vw, 2rem);
+  font-size: clamp(1.4rem, 1.2vw, 1.8rem);
 }
 
 .thankyou {
   color: var(--gray);
-  font-size: clamp(1.4rem, 1.2vw, 2rem);
+  font-size: clamp(1.4rem, 1.2vw, 1.8rem);
 }
 
 .pageNF h1 {
