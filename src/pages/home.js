@@ -61,12 +61,14 @@ export default function HomePage(props){
       className="d-flex-column align-items-center justify-content-center mx-auto logomark"
       style={{width: `100%`}}
     >
-      <div className="w-100 mb-3 p-5 text-center copy" style={{maxWidth: `90%`, margin: `0 auto`}}>
+      <div className="w-100 p-5 text-center copy" style={{maxWidth: `90%`, margin: `0 auto`}}>
         
         <p>
-          Understand how <AniLink paintDrip to="/about/" hex="#223275" duration={0.5}>That Guy From Marketing{" "}</AniLink> 
-          can help you build a better brand and create enduring customer connections by narrowing focus to one of the three specialties below. 
-           Or, to start a conversation, get in{" "}
+          In any competitive market true innovation, sharper products and better services come from the challenger brands.{" "}
+          <AniLink paintDrip to="/about/" hex="#223275" duration={0.5}>That Guy From Marketing{" "}</AniLink> 
+          offers support across three critical elements of the mix to help ensure they're fit for purpose and not obstacles to their reaching the tipping point.</p>
+          <p> 
+           The links below offer more information or, to reach the tipping point sooner, get in{" "}
          <AniLink paintDrip to="/contact/" hex="#080424" duration={0.5}>
           contact
           </AniLink>{" "}

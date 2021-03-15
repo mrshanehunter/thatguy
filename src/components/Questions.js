@@ -17,7 +17,7 @@ const StyledQuestions = styled.div`
     flex-direction: column;
     width: 100%;
     
-    margin: 0 auto;
+    margin: 0 auto 3rem;
 
     // @media (min-width: 768px) {
     // width: 100%;
@@ -26,23 +26,6 @@ const StyledQuestions = styled.div`
     // flex-wrap: wrap;
     // padding: 2rem 0;
     // }    
-`;
-
-const StyledQuestionBox = styled.div `
-    width: 100%;
-    margin: 1rem;
-    p {
-        font-family: "montserrat", sans-serif;
-        font-weight: 500;
-        font-style: normal;
-        font-size: clamp(1.4rem, 1.2vw, 1.8rem);
-        margin: 1rem;
-    }
-    @media (min-width: 768px) {
-        width: 50%;
-        height: 50%;
-        margin: 0;
-    }
 `;
 
 const StyledStatement = styled.div` 
@@ -66,10 +49,11 @@ export default function Questions({ questions }) {
                 <QuestionSet />
             </StyledQuestions>
             <StyledStatement>
-                <p>Visibility gets blamed, value shamed, and "marketing" painted as one of the dark arts.</p>
+                <p>Confused? Struggling to take it all in?</p>
+                <p>There are just 20 messages above, interrelated by theme and context. An infinitesimal fraction at the bottom end of the estimated 6,000+ advertisements and branded messages your customers are exposed to each day. </p>
             </StyledStatement>
             <StyledStatement>
-                <p>If any of these scenarios feels familiar, {<AniLink paintDrip to="/contact/" hex="#0f4c81" duration={0.5} >let's chat!</AniLink>}</p>   
+                <p>Now, armed with that knowledge and this experience, if you're doubting the context surrounding your brand or if any of the scenarios feels familiar {<AniLink paintDrip to="/contact/" hex="#0f4c81" duration={0.5} >let's chat!</AniLink>}</p>   
             </StyledStatement>
         </StyledContainer>
     </>

@@ -3,12 +3,6 @@ import makeCarousel from "react-reveal/makeCarousel"
 import Slide from "react-reveal/Slide"
 import styled from "styled-components"
 
-
-
-const width = '28rem', height='17.5rem';
-
-
-
 const Container = styled.div`
   position: relative;
   overflow: hidden;
@@ -21,7 +15,7 @@ const Container = styled.div`
 const Children  = styled.div`
   width: 28rem;
   position: relative;
-  height: 17.5rem;
+  height: 13rem;
   margin: 0 auto;
   @media (min-width: 1024px) {
     width: 68rem;
@@ -48,7 +42,7 @@ export default function QuestionSet2() {
 
 
 return (
-  <Carousel defaultWait={3500} maxTurns={100}>
+  <Carousel defaultWait={3500} maxTurns={10000}>
     <Slide bottom>
       <div className="w-100 d-flex align-items-center justify-content-center" style={{height: `100%`, background: `#0f4c81`}}> 
       <p style={{color: `#d9d9d9`, fontFamily: `montserrat`, fontSize: `1.6rem`, padding: `2rem`}}>Have you ever launched a website for your brand, with high expectations of streams of traffic? </p>
