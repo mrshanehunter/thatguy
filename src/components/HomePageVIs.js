@@ -22,7 +22,7 @@ const StyledDefinitionsContainer = styled.div`
     }
 `;
 const StyledQuestionsContainer = styled.div`
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     @media (min-width: 1024px) {
         width: 68rem;

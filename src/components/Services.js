@@ -118,12 +118,12 @@ function ServiceStream({ stream }) {
                 }  
                 {!visible &&
                     <StyledContent>
-                        <h3>{stream.name}</h3>
+                        {/* <h3>{stream.name}</h3> */}
                         <p className="definition">{stream.definition}</p>
                         <p className="benefit">{stream.benefit}</p>
                         <p className="why">{stream.why}</p>
                         <hr />
-                        <Animated animationIn="fadeIn" animationInDelay={2000}>
+                        <Animated animationIn="fadeIn" animationInDelay={1000}>
                             <AniLink paintDrip to={`/services/${stream.slug}/`} hex="#0f4c81" duration={0.5}>
                                 Let's Make It Happen
                              </AniLink>
