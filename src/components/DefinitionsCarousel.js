@@ -40,7 +40,7 @@ export default function DefinitionsCarousel() {
 
 
 return (
-  <Carousel defaultWait={3500} maxTurns={100}>
+  <Carousel defaultWait={3500} maxTurns={10000}>
     <Slide bottom>
       <div className="w-100 d-flex align-items-center justify-content-center" style={{height: `100%`, background: `#0f4c81`}}>
         <h1 style={{color: `#8abdde`, fontFamily: `timberline`, fontWeight: `500`, fontStyle: `normal`, fontSize: `4rem`}}>Visibility</h1>

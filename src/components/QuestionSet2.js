@@ -42,14 +42,14 @@ export default function QuestionSet2() {
 
 
 return (
-  <Carousel defaultWait={3500} maxTurns={10000}>
-    <Slide bottom>
+  <Carousel defaultWait={2150} maxTurns={10000}>
+    <Slide left>
       <div className="w-100 d-flex align-items-center justify-content-center" style={{height: `100%`, background: `#0f4c81`}}> 
       <p style={{color: `#d9d9d9`, fontFamily: `montserrat`, fontSize: `1.6rem`, padding: `2rem`}}>Have you ever launched a website for your brand, with high expectations of streams of traffic? </p>
       </div>
     </Slide>
 
-    <Slide top>
+    <Slide bottom>
     <div className="w-100 d-flex align-items-center justify-content-center" style={{height: `100%`, background: `#d9d9d9`}}> 
     <p style={{color: `#0f4c81`, fontFamily: `montserrat`, fontSize: `1.6rem`, padding: `2rem`}}>      
       But all you got was a trickle? 
@@ -64,7 +64,7 @@ return (
       </div>
     </Slide>
 
-    <Slide bottom>
+    <Slide right>
     <div className="w-100 d-flex align-items-center justify-content-center" style={{height: `100%`, background: `#8abdde`}}> 
     <p style={{color: `#223275`, fontFamily: `montserrat`, fontSize: `1.6rem`, padding: `2rem`}}>But got high bounce and low conversion?</p>
       </div>

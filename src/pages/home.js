@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { graphql } from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import Zoom from "react-reveal/Zoom"
 import Layout from "../components/Layout"
 import Container from "react-bootstrap/Container"
 import styled from "styled-components"
@@ -56,42 +57,46 @@ export default function HomePage(props) {
         <StyledHPVISContainer>
           <HomePageVis props={props} />
         </StyledHPVISContainer>
+
         <Container
           className="d-flex-column align-items-center justify-content-center mx-auto logomark"
           style={{ width: `100%` }}
         >
-          <div
-            className="w-100 p-5 text-center copy"
-            style={{ maxWidth: `90%`, margin: `0 auto` }}
-          >
-            <p>
-              In any competitive market true innovation, sharper products and
-              better services come from the challenger brands.{" "}
-              <AniLink paintDrip to="/about/" hex="#223275" duration={0.5}>
-                That Guy From Marketing{" "}
-              </AniLink>
-              offers support across three critical elements of the mix to help
-              ensure they're fit for purpose and not obstacles to their reaching
-              the tipping point.
-            </p>
-            <p>
-              The links below offer more information or, to reach the tipping
-              point sooner, get in{" "}
-              <AniLink paintDrip to="/contact/" hex="#080424" duration={0.5}>
-                contact
-              </AniLink>{" "}
-              today.
-            </p>
-          </div>
+          <Zoom delay={10000} duration={4500}>
+            <div
+              className="w-100 p-5 text-center copy"
+              style={{ maxWidth: `90%`, margin: `0 auto` }}
+            >
+              <p>
+                In any competitive market true innovation, sharper products and
+                better services come from the challenger brands.{" "}
+                <AniLink paintDrip to="/about/" hex="#223275" duration={0.5}>
+                  That Guy From Marketing{" "}
+                </AniLink>
+                offers support across three critical elements of the mix to help
+                ensure they're fit for purpose and not obstacles to their
+                reaching the tipping point.
+              </p>
+              <p>
+                The links below offer more information or, to reach the tipping
+                point sooner, get in{" "}
+                <AniLink paintDrip to="/contact/" hex="#080424" duration={0.5}>
+                  contact
+                </AniLink>{" "}
+                today.
+              </p>
+            </div>
+          </Zoom>
         </Container>
-
-        <StyledServiceContainer>
-          {width < breakpoint ? (
-            <ServicesMbl streams={streams} />
-          ) : (
-            <Services streams={streams} />
-          )}
-        </StyledServiceContainer>
+        <Zoom delay={10000} duration={4500}>
+          <StyledServiceContainer>
+            {width < breakpoint ? (
+              <ServicesMbl streams={streams} />
+            ) : (
+              <Services streams={streams} />
+            )}
+          </StyledServiceContainer>
+        </Zoom>
       </StyledPageContainer>
     </Layout>
   )

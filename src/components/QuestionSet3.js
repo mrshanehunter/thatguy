@@ -48,29 +48,30 @@ export default function QuestionSet3() {
 
 
 return (
-  <Carousel defaultWait={4250} maxTurns={10000}>
-    <Slide left>
+  <Carousel defaultWait={2120} maxTurns={10000}>
+    <Slide top>
       <div className="w-100 d-flex align-items-center justify-content-center" style={{height: `100%`, background: `transparent`}}> 
-      <p style={{color: `#8abdde`, fontFamily: `montserrat`, fontSize: `1.6rem`, padding: `2rem`}}>Have you ever launched a website for your brand, with high expectations of streams of traffic? </p>
+      <p style={{color: `#8abdde`, fontFamily: `montserrat`, fontSize: `1.6rem`, padding: `2rem`}}>Developed a killer tag line for your brand that articlulates your positioning perfectly? </p>
       </div>
     </Slide>
 
     <Slide right>
     <div className="w-100 d-flex align-items-center justify-content-center" style={{height: `100%`, background: `#8abdde`}}> 
-    <p style={{color: `#0f4c81`, fontFamily: `montserrat`, fontSize: `1.6rem`, padding: `2rem`}}>But all you got was a trickle? </p>
+    <p style={{color: `#0f4c81`, fontFamily: `montserrat`, fontSize: `1.6rem`, padding: `2rem`}}>But still get customers questioning your offering? Or worse, switching to a competitor? </p>
     </div>
     </Slide>
   
    
    <Slide left>
-      <div className="w-100 d-flex align-items-center justify-content-center" style={{height: `100%`, background: `#d9d9d9`}}> 
-      <p style={{color: `#080424`, fontFamily: `montserrat`, fontSize: `1.6rem`, padding: `2rem`}}>How about the forecast metrics? Anticpate low bounce and high conversion? </p>
+      <div className="w-100 d-flex align-items-center justify-content-center" style={{height: `100%`, background: `transparent`}}> 
+      <p style={{color: `#8abdde`, fontFamily: `montserrat`, fontSize: `1.6rem`, padding: `2rem`}}>Invested in new branded assets and marketing collateral to show off your new identity after a re-brand? </p>
       </div>
     </Slide>
 
-    <Slide right>
-    <div className="w-100 d-flex align-items-center justify-content-center" style={{height: `100%`, background: `#223275`}}> 
-    <p style={{color: `#d9d9d9`, fontFamily: `montserrat`, fontSize: `1.6rem`, padding: `2rem`}}>But got high bounce and low conversion?</p>
+    <Slide bottom>
+    <div className="w-100 d-flex align-items-center justify-content-center" style={{height: `100%`, background: `#0f4c81`}}> 
+    <p style={{color: `#d9d9d9`, fontFamily: `montserrat`, fontSize: `1.6rem`, padding: `2rem`}}>Only to find that the colour combination or logo design is anathema to your most desirable target?
+    </p>
       </div>
     </Slide>
   </Carousel>

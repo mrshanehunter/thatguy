@@ -48,10 +48,10 @@ export default function QuestionSet1() {
 
 
 return (
-  <Carousel defaultWait={3950} maxTurns={10000}>
-    <Slide left>
+  <Carousel defaultWait={1950} maxTurns={10000}>
+    <Slide bottom>
       <div className="w-100 d-flex align-items-center justify-content-center" style={{height: `100%`, background: `transparent`}}> 
-      <p style={{color: `#d9d9d9`, fontFamily: `montserrat`, fontSize: `1.6rem`, padding: `2rem`}}>Have you been left frustrated at the lack of uplift achieved by a campaign that required a serious investment? </p>
+      <p style={{color: `#d9d9d9`, fontFamily: `montserrat`, fontSize: `1.6rem`, padding: `2rem`}}>Have you been left frustrated at the lack of interest or enagagement  achieved by a campaign that required a serious investment? </p>
       </div>
     </Slide>
 
@@ -59,6 +59,19 @@ return (
     <div className="w-100 d-flex align-items-center justify-content-center" style={{height: `100%`, background: `transparent`}}> 
     <p style={{color: `#8abdde`, fontFamily: `montserrat`, fontSize: `1.6rem`, padding: `2rem`}}>
         Had the lack lustre results explained away by "the visibility wasn't there", or "just not enough eyeballs"?
+      </p> 
+      </div>
+    </Slide>
+    <Slide top>
+      <div className="w-100 d-flex align-items-center justify-content-center" style={{height: `100%`, background: `transparent`}}> 
+      <p style={{color: `#d9d9d9`, fontFamily: `montserrat`, fontSize: `1.6rem`, padding: `2rem`}}>Spent time and money allocating resources or to support a campaign forecasting an uplift? </p>
+      </div>
+    </Slide>
+
+    <Slide left>
+    <div className="w-100 d-flex align-items-center justify-content-center" style={{height: `100%`, background: `transparent`}}> 
+    <p style={{color: `#8abdde`, fontFamily: `montserrat`, fontSize: `1.6rem`, padding: `2rem`}}>
+        Leaving you to make up the shortfall on costs when the actual uplift didn't come close to the forecast?
       </p> 
       </div>
     </Slide>
