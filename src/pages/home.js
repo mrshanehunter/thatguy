@@ -38,10 +38,11 @@ const StyledHPVISContainer = styled.div`
 `
 
 export default function HomePage(props) {
-  const [width, setWidth] = useState(window.innerWidth)
+  const [width, setWidth] = useState()
   const breakpoint = 1400
 
   useEffect(() => {
+    setWidth(window.innerWidth)
     const handleWindowResize = () => setWidth(window.innerWidth)
     window.addEventListener("resize", handleWindowResize)
     return () => window.removeEventListener("resize", handleWindowResize)

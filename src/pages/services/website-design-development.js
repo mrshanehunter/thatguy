@@ -35,12 +35,13 @@ const StyledServicesContainer = styled.div`
 `;
 
 export default function WebsitePage(props) {
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState();
   const breakpoint = 1024;
   const webs = props.data.webs.nodes;
   const wsummarys = props.data.wsummarys.nodes;
 
   useEffect(() => {
+    setWidth(window.innerWidth)
     const handleWindowResize = () => setWidth(window.innerWidth)
     window.addEventListener("resize", handleWindowResize);
     return () => window.removeEventListener("resize", handleWindowResize);

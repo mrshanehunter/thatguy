@@ -56,7 +56,7 @@ function PolicyHeader({ privacy }) {
 }
 
 function PolicyPara(props) {
-    console.log("policy", props);
+  
     if (props.id === props.para.sectRef) {
         return (
             <p key={props.para.id}>{props.para.sectRef}.{props.para.paraNo}. {props.para.paraText}</p>
@@ -69,7 +69,7 @@ function PolicyPara(props) {
 
 
 function PolicyContent({ sects, paras }) {
-  console.log(sects);
+ 
     return (
        <>
        <StyledPolicySection>
@@ -94,7 +94,7 @@ function PolicyContent({ sects, paras }) {
 
 
 export default function PrivacyPolicy(props) {
-    console.log(props)
+    
     const privacys = props.props.data.allSanityPolicys.nodes;
     const paras = props.props.data.allSanityParagraphs.nodes;
     const sects = props.props.data.allSanitySections.nodes;

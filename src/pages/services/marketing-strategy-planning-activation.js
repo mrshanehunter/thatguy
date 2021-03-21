@@ -34,12 +34,13 @@ const StyledServicesContainer = styled.div`
 `;
 
 export default function MarketingPage(props) {
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState();
   const breakpoint = 1024;
   const markets = props.data.markets.nodes;
   const msummarys = props.data.msummarys.nodes;
 
   useEffect(() => {
+    setWidth(window.innerWidth)
     const handleWindowResize = () => setWidth(window.innerWidth)
     window.addEventListener("resize", handleWindowResize);
     return () => window.removeEventListener("resize", handleWindowResize);

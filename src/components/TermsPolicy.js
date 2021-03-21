@@ -56,7 +56,7 @@ function TermsHeader({ term }) {
 }
 
 function TermsPara(props) {
-    console.log("policy", props);
+   
     
     if (props.id === props.para.sectRef && props.policy === "Terms & Conditions") {
         return (
@@ -69,7 +69,7 @@ function TermsPara(props) {
 }
 
 function TermsContent({ sects, paras }) {
-  console.log(sects);
+  
     return (
        <>
        <StyledTermsSection>

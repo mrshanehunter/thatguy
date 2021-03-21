@@ -34,12 +34,13 @@ const StyledServicesContainer = styled.div`
 `;
 
 export default function BrandingPage(props) {
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState();
   const breakpoint = 1024;
   const brands = props.data.brands.nodes;
   const bsummarys = props.data.bsummarys.nodes;
 
   useEffect(() => {
+    setWidth(window.innerWidth)
     const handleWindowResize = () => setWidth(window.innerWidth)
     window.addEventListener("resize", handleWindowResize);
     return () => window.removeEventListener("resize", handleWindowResize);

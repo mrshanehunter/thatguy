@@ -9,7 +9,7 @@ import Profile from "../components/Profile"
 
 export default function AboutPage({ data }) {
     const abouts = data.abouts.nodes
-console.log(abouts)
+
     return (
         <>
         <Layout>
