@@ -49,7 +49,7 @@ export default function Questions({ questions }) {
           <StyledQuestions>
             <QuestionSet />
           </StyledQuestions>
-          <Zoom delay={10000} duration={5000}>
+          <Zoom delay={7000} duration={3000}>
             <StyledStatement>
               <p>Confused? Struggling to take it all in?</p>
               <p>

@@ -63,16 +63,16 @@ export default function HomePage(props) {
           className="d-flex-column align-items-center justify-content-center mx-auto logomark"
           style={{ width: `100%` }}
         >
-          <Zoom delay={10000} duration={4500}>
+          <Zoom delay={7000} duration={2500}>
             <div
-              className="w-100 p-5 text-center copy"
-              style={{ maxWidth: `90%`, margin: `0 auto` }}
+              className="w-100 p-3 text-center copy"
+              style={{ maxWidth: `100%`, margin: `0 auto` }}
             >
               <p>
                 In any competitive market true innovation, sharper products and
                 better services come from the challenger brands.{" "}
                 <AniLink paintDrip to="/about/" hex="#223275" duration={0.5}>
-                  That Guy From Marketing{" "}
+                  That Guy From Marketing&reg;{" "}
                 </AniLink>
                 offers support across three critical elements of the mix to help
                 ensure they're fit for purpose and not obstacles to their
@@ -89,7 +89,7 @@ export default function HomePage(props) {
             </div>
           </Zoom>
         </Container>
-        <Zoom delay={10000} duration={4500}>
+        <Zoom delay={7000} duration={2500}>
           <StyledServiceContainer>
             {width < breakpoint ? (
               <ServicesMbl streams={streams} />

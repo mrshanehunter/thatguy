@@ -21,7 +21,7 @@ const Container = styled.div`
 const Children  = styled.div`
   width: 28rem;
   position: relative;
-  height: 13rem;
+  height: 14rem;
   margin: 0 auto;
   @media (min-width: 1024px) {
     width: 68rem;
@@ -30,7 +30,7 @@ const Children  = styled.div`
 
 
 
-const CarouselUI = ({ position, total, handleClick, children }) => (
+const CarouselUI = ({ children }) => (
   <Container>
     <Children>
       {children}
