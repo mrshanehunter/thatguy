@@ -49,7 +49,7 @@ export default function QuestionSet1() {
 
 return (
   <Carousel defaultWait={1950} maxTurns={10000}>
-    <Slide bottom>
+    <Slide bottom opposite>
       <div className="w-100 d-flex align-items-center justify-content-center" style={{height: `100%`, background: `transparent`}}> 
       <p style={{color: `#d9d9d9`, fontFamily: `montserrat`, fontSize: `1.6rem`, padding: `2rem`}}>Have you been left frustrated at the lack of interest or enagagement  achieved by a campaign that required a serious investment? </p>
       </div>
@@ -68,7 +68,7 @@ return (
       </div>
     </Slide>
 
-    <Slide left>
+    <Slide left opposite>
     <div className="w-100 d-flex align-items-center justify-content-center" style={{height: `100%`, background: `transparent`}}> 
     <p style={{color: `#8abdde`, fontFamily: `montserrat`, fontSize: `1.6rem`, padding: `2rem`}}>
         Leaving you to make up the shortfall on costs when the actual uplift didn't come close to the forecast?

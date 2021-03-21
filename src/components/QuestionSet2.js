@@ -49,7 +49,7 @@ return (
       </div>
     </Slide>
 
-    <Slide bottom>
+    <Slide top opposite>
     <div className="w-100 d-flex align-items-center justify-content-center" style={{height: `100%`, background: `#d9d9d9`}}> 
     <p style={{color: `#0f4c81`, fontFamily: `montserrat`, fontSize: `1.6rem`, padding: `2rem`}}>      
       But all you got was a trickle? 
@@ -64,7 +64,7 @@ return (
       </div>
     </Slide>
 
-    <Slide right>
+    <Slide right opposite>
     <div className="w-100 d-flex align-items-center justify-content-center" style={{height: `100%`, background: `#8abdde`}}> 
     <p style={{color: `#223275`, fontFamily: `montserrat`, fontSize: `1.6rem`, padding: `2rem`}}>But got high bounce and low conversion?</p>
       </div>
