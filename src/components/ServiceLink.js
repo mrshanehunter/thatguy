@@ -24,7 +24,7 @@ export default function ServiceLinkMbl(props) {
         {pgLoc === "brand" ?  <BlankItem /> : 
           <Nav.Item>
             <AniLink
-              paintdrip
+              paintDrip
               to="/services/branding-and-brand-development/"
               hex="#0f4c81"
               duration={0.5}
@@ -38,9 +38,9 @@ export default function ServiceLinkMbl(props) {
         ) : (
           <Nav.Item>
             <AniLink
-              paintdrip
+              paintDrip
               to="/services/marketing-strategy-planning-activation/"
-              hex="#0f4c81"
+              hex="#d9d9d9"
               duration={0.5}
             >
               marketing strategy, planning, activation
@@ -52,7 +52,7 @@ export default function ServiceLinkMbl(props) {
         ) : (
           <Nav.Item>
             <AniLink
-              paintdrip
+              paintDrip
               to="/services/website-design-development/"
               hex="#223275"
               duration={0.5}

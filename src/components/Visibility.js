@@ -20,7 +20,7 @@ return(
   <div style={opac}>
     <Fade ssrFadeout="true" delay={1000} duration={1000} >
       <div className="w-100 p-2 mx-auto visibility">
-        <AniLink paintDrip to="/home/" hex="#8abdde" duration={0.5}>
+        <AniLink paintDrip to="/home/" hex="#8abdde" duration={0.25}>
           <Zoom duration={2000}>
             
         <span>   <h1 className="text-center">

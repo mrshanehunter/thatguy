@@ -45,6 +45,7 @@ module.exports = {
         projectId: 'weuctgl1',
         dataset: 'production',
         token: process.env.SANITY_TOKEN,
+        watchMode: true,
       },
     },
     {

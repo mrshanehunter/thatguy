@@ -71,7 +71,7 @@ export default function HomePage(props) {
               <p>
                 In any competitive market true innovation, sharper products and
                 better services come from the challenger brands.{" "}
-                <AniLink paintDrip to="/about/" hex="#223275" duration={0.5}>
+                <AniLink paintDrip to="/about/" hex="#223275" duration={0.25}>
                   That Guy From Marketing&reg;{" "}
                 </AniLink>
                 offers support across three critical elements of the mix to help
@@ -81,7 +81,7 @@ export default function HomePage(props) {
               <p>
                 The links below offer more information or, to reach the tipping
                 point sooner, get in{" "}
-                <AniLink paintDrip to="/contact/" hex="#080424" duration={0.5}>
+                <AniLink paintDrip to="/contact/" hex="#080424" duration={0.25}>
                   contact
                 </AniLink>{" "}
                 today.

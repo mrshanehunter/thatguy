@@ -16,14 +16,14 @@ const FooterStyles = styled.footer`
 const Footer = () => {
   return (
     <FooterStyles>
-      <AniLink paintDrip to="/privacy/" hex="#223275" duration={0.5}>
+      <AniLink paintDrip to="/privacy/" hex="#223275" duration={0.25}>
         privacy
       </AniLink>
       <p>
         &copy; That Guy From Marketing&reg; {new Date().getFullYear()}, All
         Rights Reserved.
       </p>
-      <AniLink paintDrip to="/terms/" hex="#8abdde" duration={0.5}>
+      <AniLink paintDrip to="/terms/" hex="#8abdde" duration={0.25}>
         terms
       </AniLink>
     </FooterStyles>

@@ -51,7 +51,7 @@ const NotFoundPage = () => {
                 <p>This isn&#39;t going to help build your brand.</p>
                 <p>The route you&#39;ve hit doesn&#39;t exist...</p>
               </div>
-              <AniLink paintDrip to="/home/" hex="#080424" duration={0.5}>
+              <AniLink paintDrip to="/home/" hex="#080424" duration={0.25}>
                 <div className="w-75 pnfLink">Get Back On Track</div>
               </AniLink>
             </Card.Body>

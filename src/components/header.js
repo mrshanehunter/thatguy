@@ -9,22 +9,22 @@ const Header = ({ siteTitle, children }) => (
    
     <Nav className="justify-content-end">
       <Nav.Item>
-        <AniLink paintDrip to="/home/" hex="#0f4c81" duration={0.5}>
+        <AniLink paintDrip to="/home/" hex="#0f4c81" duration={0.25}>
           home
         </AniLink>
       </Nav.Item>
       <Nav.Item>
-        <AniLink paintDrip to="/projects/" hex="#223275" duration={0.5}>
+        <AniLink paintDrip to="/projects/" hex="#223275" duration={0.25}>
           projects
         </AniLink>
       </Nav.Item>
       <Nav.Item>
-        <AniLink paintDrip to="/about/" hex="#080424" duration={0.5}>
+        <AniLink paintDrip to="/about/" hex="#080424" duration={0.25}>
           about
         </AniLink>
       </Nav.Item>
       <Nav.Item>
-        <AniLink paintDrip to="/contact/" hex="#d9d9d9" duration={0.5}>
+        <AniLink paintDrip to="/contact/" hex="#d9d9d9" duration={0.25}>
           contact
         </AniLink>
       </Nav.Item>

@@ -21,7 +21,7 @@ function ServiceStreamMbl({ stream }) {
           <Card.Text className="SSMbl">{stream.why}</Card.Text>
        
       
-          <AniLink paintDrip to={`/services/${stream.slug}`} hex="#0f4c81" duration={0.5}>
+          <AniLink paintDrip to={`/services/${stream.slug}`} hex="#0f4c81" duration={0.25}>
             Let's Make It Happen
           </AniLink>
           </Card.Body> 

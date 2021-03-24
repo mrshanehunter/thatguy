@@ -37,84 +37,89 @@ const StyledOverlay = styled.div`
    `;
 
 const StyledContent = styled.div`
-   width: 40rem;
-    height: 40rem;
-    background: var(--highlight);
+  width: 40rem;
+  height: 38rem;
+  background: var(--highlight);
+  color: var(--base);
+  border-radius: 1rem;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  margin: 0 auto;
+  h3 {
+    font-family: "montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
     color: var(--base);
-    border-radius: 1rem;
     position: relative;
-    top: 0px;
-    left: 0px;
-    margin: 0 auto;
-    h3 {
-        font-family: "montserrat", sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 1.6rem;
-        color: var(--base);
-        position: relative;
-        top: 1rem;
-        left: 1rem;
-    }
-    p {
-        color: var(--base);
-        font-family: "montserrat", sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 1.6rem
-    }
-    .description {
-            position: relative;
-            top: 1rem;
-            left: 1rem;
-            width: 37.5rem
-        }
-        .one {
-            position: relative;
-            top: 1rem;
-            left: 1rem;
-        } 
-        .two {
-            position: relative;
-            top: 0.5rem;
-            left: 1rem;
-        } 
-        .three {
-            position: relative;
-            top: 0.5rem;
-            left: 1rem;
-        } 
-        .four {
-            position: relative;
-            top: -9.25rem;
-            left: 50%;
-        } 
-        .five {
-            position: relative;
-            top: -9.5rem;
-            left: 50%;
-        } 
-        .six {
-            position: relative;
-            top: -9.5rem;
-            left: 50%;
-        } 
+    top: 1rem;
+    left: 1rem;
+  }
+  p {
+    color: var(--base);
+    font-family: "montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+  .description {
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    width: 37.5rem;
+  }
+  .one {
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+  }
+  .two {
+    position: relative;
+    top: 0.5rem;
+    left: 1rem;
+  }
+  .three {
+    position: relative;
+    top: 0.5rem;
+    left: 1rem;
+  }
+  .four {
+    position: relative;
+    top: -9.25rem;
+    left: 50%;
+  }
+  .five {
+    position: relative;
+    top: -9.5rem;
+    left: 50%;
+  }
+  .six {
+    position: relative;
+    top: -9.5rem;
+    left: 50%;
+  }
 
+  .makeIt {
     
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     a {
-        cursor: pointer;
-        color: var(--classic);
-        font-family: "montserrat", sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 1.6rem;
-        position: relative;
-        top: 30%;
-        left: 32.5%;
+      cursor: pointer;
+      color: var(--classic);
+      font-family: "montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.6rem;
     }
-   
-    
-`;
+  }
+`
 
 
 function WebsiteDivisions({ web }) {
@@ -159,13 +164,15 @@ function WebsiteDivisions({ web }) {
                           <p className="four">{web.inclusion4}</p>
                           <p className="five">{web.inclusion5}</p>
                           <p className="six">{web.inclusion6}</p>
-                         
+                          <div className="
+                          makeIt">  
                           <Animated>
                         
-                          <AniLink paintDrip to="/contact/" hex="#223275" duration={0.5}>
+                          <AniLink paintDrip to="/contact/" hex="#223275" duration={0.25}>
           Make It Happen
         </AniLink>
                           </Animated>
+                          </div>
                       </StyledContent>
                   
                  } 

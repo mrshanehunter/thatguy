@@ -20,7 +20,7 @@ const ThanksPage = () => (
           <br />
           <p>That Guy From Marketing will be in contact.</p>
           <br />
-          <AniLink paintDrip to="/home/" hex="#223275" duration={0.5}>
+          <AniLink paintDrip to="/home/" hex="#223275" duration={0.25}>
             Return to the home page
           </AniLink>
         </Card.Body>

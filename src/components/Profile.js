@@ -24,51 +24,57 @@ const StyledContainer = styled.div`
 `;
 
 const StyledImageContainer = styled.div` 
-    display: flex;
-    flex-direction: row;
-    p {
-    
-    }
+
+  img {
+      margin-bottom: 2rem;
+  }  
+  
+  @media (min-width: 768px){
     img {
-        float: left;
-        margin: 2rem;
-        
-    }     
-`;
-
-
+        margin-bottom: 0;
+    }  
+   .textWrap {
+       width: 17.5rem;
+       height: 17.5rem;
+       float: left;
+       shape-outside: circle();
+       margin: 0 1.5rem 1.5rem 0;
+   }
+  }
+`
+;
 
 function ProfileDetails({ about }) {
     return (
-        <StyledContainer>
-           <p>{about.para1}</p>
-          
-           <StyledImageContainer>
-              
-           <p>{about.para2} 
-           
-          
-            <Image {...about.image}
-            width={500}
-            height={500}
-            style={{height: `20rem`, width: `20rem`, borderRadius: `50%`, border: `0.25rem solid var(--highlight)`}}
-            alt="Image of That Guy From Marketing"
-            />
-            {" "}
-            <br />
-            {about.para3}
-            <br/>
-            {about.para4}
+      <StyledContainer>
+        <p>{about.para1}</p>
+        <br />
 
-           </p>
-            </StyledImageContainer>
-           
-            
-           
-            <p>{about.para5}</p>
-           
-          <h6>* a Unilever lesson that has not been discarded</h6>
-        </StyledContainer>
+        <p> {about.para2}</p>
+        <br />
+        <p> {about.para3}</p>
+        <br />
+        <p> {about.para4}</p>
+        <br />
+        <StyledImageContainer>
+          <Image
+            {...about.image}
+            width={300}
+            height={300}
+            className="textWrap"
+            style={{
+              height: `17.5rem`,
+              width: `17.5rem`,
+              borderRadius: `50%`,
+              border: `0.25rem solid var(--highlight)`,
+            }}
+            alt="Image of That Guy From Marketing"
+          />
+          <p>{about.para5}</p>
+        </StyledImageContainer>
+
+        <h6>* a Unilever lesson that has not been discarded</h6>
+      </StyledContainer>
     )
 }
 

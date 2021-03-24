@@ -41,7 +41,7 @@ const StyledOverlay = styled.div`
 
 const StyledContent = styled.div`
     width: 40rem;
-    height: 40rem;
+    height: 38rem;
     background: var(--highlight);
     color: var(--base);
     border-radius: 1rem;
@@ -103,7 +103,15 @@ const StyledContent = styled.div`
             left: 50%;
         } 
 
-    
+     .makeIt {
+        
+        width: 100%;
+        height: 40px;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     a {
         cursor: pointer;
         color: var(--classic);
@@ -111,11 +119,8 @@ const StyledContent = styled.div`
         font-style: normal;
         font-weight: 500;
         font-size: 1.6rem;
-        position: relative;
-        top: -5rem;
-        left: 32.5%
-    }
-   
+       }
+     }
     
 `;
 
@@ -135,46 +140,36 @@ function MarketingDivisions({ market }) {
     }
 
     return (
-    
-            <StyledServiceContainer 
-            onMouseEnter={onMouseHoverEnter}
-            onMouseLeave={onMouseHoverLeave}
-           
-                
-                
-                >
-                 {visible && 
-                 
-                    <StyledOverlay>
-                       <Img fluid={market.image.asset.fluid} alt={market.name} />
-                        </StyledOverlay> 
-                
-                 
-                 }  
-                 {!visible &&
-                  
-                      <StyledContent>
-                          <h3>{market.name}</h3>
-                          <p className="description">{market.description}</p>
-                          <p className="one">{market.inclusion1}</p>
-                          <p className="two">{market.inclusion2}</p>
-                          <p className="three">{market.inclusion3}</p>
-                          <p className="four">{market.inclusion4}</p>
-                          <p className="five">{market.inclusion5}</p>
-                          <p className="six">{market.inclusion6}</p>
-                         
-                          <Animated>
-                          <AniLink paintDrip to="/contact/" hex="#0f4c81" duration={0.5}>
-          Make It Happen
-        </AniLink>
-                          </Animated>
-                      </StyledContent>
-                  
-                 } 
+      <StyledServiceContainer
+        onMouseEnter={onMouseHoverEnter}
+        onMouseLeave={onMouseHoverLeave}
+      >
+        {visible && (
+          <StyledOverlay>
+            <Img fluid={market.image.asset.fluid} alt={market.name} />
+          </StyledOverlay>
+        )}
+        {!visible && (
+          <StyledContent>
+            <h3>{market.name}</h3>
+            <p className="description">{market.description}</p>
+            <p className="one">{market.inclusion1}</p>
+            <p className="two">{market.inclusion2}</p>
+            <p className="three">{market.inclusion3}</p>
+            <p className="four">{market.inclusion4}</p>
+            <p className="five">{market.inclusion5}</p>
+            <p className="six">{market.inclusion6}</p>
 
-                </StyledServiceContainer>
-
-       
+            <div className="makeIt">
+              <Animated>
+                <AniLink paintDrip to="/contact/" hex="#0f4c81" duration={0.5}>
+                  Make It Happen
+                </AniLink>
+              </Animated>
+            </div>
+          </StyledContent>
+        )}
+      </StyledServiceContainer>
     )
                 }
 

@@ -41,7 +41,7 @@ const StyledOverlay = styled.div`
 
 const StyledContent = styled.div`
     width: 40rem;
-    height: 40rem;
+    height: 38rem;
     background: var(--highlight);
     color: var(--base);
     border-radius: 1rem;
@@ -102,20 +102,25 @@ const StyledContent = styled.div`
             top: -9.5rem;
             left: 50%;
         } 
-
-    
-    a {
+    .makeIt {
+        
+        width: 100%;
+        height: 40px;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
         cursor: pointer;
         color: var(--classic);
         font-family: "montserrat", sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 1.6rem;
-        position: relative;
-        top: -8rem;
-        left: 30%
+        
     }
-   
+   }
     
 `;
 
@@ -161,13 +166,14 @@ function BrandingDivisions({ brand }) {
                           <p className="four">{brand.inclusion4}</p>
                           <p className="five">{brand.inclusion5}</p>
                           <p className="six">{brand.inclusion6}</p>
-                         
+                         <div className="makeIt">
                           <Animated>
                           
                           <AniLink paintDrip to="/contact/" hex="#8abdde" duration={0.5}>
           Make It Happen
         </AniLink>
                           </Animated>
+                          </div>
                       </StyledContent>
                   
                  } 

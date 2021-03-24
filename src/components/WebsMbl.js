@@ -25,7 +25,7 @@ function WebStreamMbl({ web }) {
           <Card.Text className="SSMbl">{web.inclusion5}</Card.Text>
           <Card.Text className="SSMbl">{web.inclusion6}</Card.Text>
 
-          <AniLink paintDrip to={"/contact/"} hex="#0f4c81" duration={0.5}>
+          <AniLink paintDrip to={"/contact/"} hex="#0f4c81" duration={0.25}>
             Make It Happen Today
           </AniLink>
         </Card.Body>

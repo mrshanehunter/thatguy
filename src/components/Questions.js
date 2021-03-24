@@ -69,7 +69,7 @@ export default function Questions({ questions }) {
                     paintDrip
                     to="/contact/"
                     hex="#0f4c81"
-                    duration={0.5}
+                    duration={0.25}
                   >
                     let's chat!
                   </AniLink>
