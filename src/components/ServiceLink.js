@@ -27,7 +27,7 @@ export default function ServiceLinkMbl(props) {
               paintDrip
               to="/services/branding-and-brand-development/"
               hex="#0f4c81"
-              duration={0.5}
+              duration={0.25}
             >
               branding, brand development
             </AniLink>
@@ -41,7 +41,7 @@ export default function ServiceLinkMbl(props) {
               paintDrip
               to="/services/marketing-strategy-planning-activation/"
               hex="#d9d9d9"
-              duration={0.5}
+              duration={0.25}
             >
               marketing strategy, planning, activation
             </AniLink>
@@ -55,7 +55,7 @@ export default function ServiceLinkMbl(props) {
               paintDrip
               to="/services/website-design-development/"
               hex="#223275"
-              duration={0.5}
+              duration={0.25}
             >
               website design, development
             </AniLink>
