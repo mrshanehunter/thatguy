@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { graphql } from "gatsby";
 import styled from "styled-components";
 import Layout from "../../components/Layout";
+import ServiceLink from "../../components/ServiceLink"
+import ServiceLinkMbl from "../../components/ServiceLinkMbl"
 import SEO from "../../components/SEOComp";
 import Webs from "../../components/Webs";
 import WebsMbl from "../../components/WebsMbl"
@@ -50,6 +52,8 @@ export default function WebsitePage(props) {
   return( 
     <Layout>
       <SEO title="Website Design & Development" />
+      { width < breakpoint ? <ServiceLinkMbl id={"web"} /> :
+      <ServiceLink id={"web"} />}
       <StyledContainer>
       <WebsiteSummary wsummarys={wsummarys} />
       </StyledContainer>  

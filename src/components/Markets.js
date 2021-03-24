@@ -113,7 +113,7 @@ const StyledContent = styled.div`
         font-size: 1.6rem;
         position: relative;
         top: -5rem;
-        left: 25%
+        left: 32.5%
     }
    
     

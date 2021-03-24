@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 import Layout from "../../components/Layout"
+import ServiceLink from "../../components/ServiceLink"
+import ServiceLinkMbl from "../../components/ServiceLinkMbl"
 import SEO from "../../components/SEOComp"
 import Markets from "../../components/Markets"
 import MarketsMbl from "../../components/MarketsMbl"
@@ -49,16 +51,20 @@ export default function MarketingPage(props) {
 
 
 
-  return( 
+  return (
     <Layout>
       <SEO title="Marketing Strategy, Planning, Activation" />
-    <StyledContainer>
-      <MarketingSummary msummarys={msummarys} />
-      
-    </StyledContainer>
-    <StyledServicesContainer>
-    { width < breakpoint ? <MarketsMbl markets={markets} /> :    <Markets markets={markets}/>}
-    </StyledServicesContainer>
+      {width < breakpoint ?  <ServiceLinkMbl id={"mktg"} /> :
+        <ServiceLink id={"mktg"} />
+      }
+      <StyledContainer>
+        <MarketingSummary msummarys={msummarys} />
+      </StyledContainer>
+      <StyledServicesContainer>
+        {width < breakpoint ?   <MarketsMbl markets={markets} />
+         : <Markets markets={markets} />
+        }
+      </StyledServicesContainer>
     </Layout>
   )
 }

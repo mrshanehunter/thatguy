@@ -25,10 +25,12 @@ const StyledSummary = styled.div`
 
 function Summary({ bsummary }) {
     return (
+        
         <StyledSummary>
         <Img fluid={bsummary.image.asset.fluid} alt="Branding Service Image" />
         <p>{bsummary.description}</p>
         </StyledSummary>
+        
     )
 }
 

@@ -2,6 +2,8 @@ import React, { useState, useEffect }from "react";
 import { graphql } from "gatsby";
 import styled from "styled-components";
 import Layout from "../../components/Layout";
+import ServiceLink from "../../components/ServiceLink"
+import ServiceLinkMbl from "../../components/ServiceLinkMbl"
 import SEO from "../../components/SEOComp";
 import Brands from "../../components/Brands";
 import BrandsMbl from "../../components/BrandsMbl";
@@ -49,6 +51,8 @@ export default function BrandingPage(props) {
   return( 
     <Layout>
       <SEO title="Branding & Brand Development" />
+      { width < breakpoint ? <ServiceLinkMbl id={"brand"} /> :
+      <ServiceLink id={"brand"} /> }
     <StyledContainer>
             <BrandSummary bsummarys={bsummarys} />
             </StyledContainer>
