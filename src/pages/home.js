@@ -63,10 +63,10 @@ export default function HomePage(props) {
           className="d-flex-column align-items-center justify-content-center mx-auto logomark"
           style={{ width: `100%` }}
         >
-          <Zoom delay={7000} duration={2500}>
+          <Zoom delay={2000} duration={2500}>
             <div
               className="w-100 p-3 text-center copy"
-              style={{ maxWidth: `100%`, margin: `0 auto` }}
+              style={{ maxWidth: `90%`, margin: `0 auto` }}
             >
               <p>
                 In any competitive market true innovation, sharper products and
@@ -75,8 +75,7 @@ export default function HomePage(props) {
                   That Guy From Marketing&reg;{" "}
                 </AniLink>
                 offers support across three critical elements of the mix to help
-                ensure they're fit for purpose and not obstacles to their
-                reaching the tipping point.
+                ensure they're fit for purpose and not obstacles to reaching the tipping point.
               </p>
               <p>
                 The links below offer more information or, to reach the tipping
@@ -89,7 +88,7 @@ export default function HomePage(props) {
             </div>
           </Zoom>
         </Container>
-        <Zoom delay={7000} duration={2500}>
+        <Zoom delay={1500} duration={2500}>
           <StyledServiceContainer>
             {width < breakpoint ? (
               <ServicesMbl streams={streams} />
