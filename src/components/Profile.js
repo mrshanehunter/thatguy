@@ -12,7 +12,7 @@ const StyledContainer = styled.div`
     font-style: normal;
     font-weight: 500;
     color: var(--gray);
-    font-size: clamp(1.4rem, 1.2vw, 2rem);
+    font-size: 1.4rem;
     }
     h6 {
     font-family: montserrat, sans-serif;
