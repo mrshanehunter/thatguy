@@ -23,23 +23,32 @@ const StyledContainer = styled.div`
     }
 `;
 
-const StyledImageContainer = styled.div` 
-
+const StyledImageContainer = styled.div`
   .gatsby-image-wrapper {
-      margin-bottom: 2rem;
-  }  
-  
-  @media (min-width: 768px){
+    margin-bottom: 2rem;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    .textWrap {
+      width: 17.5rem;
+      height: 17.5rem;
+      float: left;
+      shape-outside: circle();
+      margin: 0 1.5rem 1.5rem 0;
+    }
+  }
+
+  @media (min-width: 768px) {
     .gatsby-image-wrapper {
-        margin-bottom: 0;
-    }  
-   .textWrap {
-       width: 17.5rem;
-       height: 17.5rem;
-       float: left;
-       shape-outside: circle();
-       margin: 0 1.5rem 1.5rem 0;
-   }
+      margin-bottom: 0;
+    }
+    .textWrap {
+      width: 17.5rem;
+      height: 17.5rem;
+      float: left;
+      shape-outside: circle();
+      margin: 0 1.5rem 1.5rem 0;
+    }
   }
 `
 ;
@@ -60,9 +69,8 @@ function ProfileDetails({ profile }) {
         <StyledImageContainer>
           <GatsbyImage
             image = {profile.image.asset.gatsbyImageData}
-            // width={300}
-            // height={300}
-            // className="textWrap"
+            
+             className="textWrap"
             // style={{
             //   height: `17.5rem`,
             //   width: `17.5rem`,
