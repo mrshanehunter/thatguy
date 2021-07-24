@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container"
 import Card from "react-bootstrap/Card"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Layout from "../components/Layout"
-import Seo from "../components/SeoComp"
+import SEOComp from "../components/SEOComp"
 
 const NotFoundPage = () => {
   const data = useStaticQuery(graphql`
@@ -23,20 +23,19 @@ const NotFoundPage = () => {
   const imageData = data.desktop.childImageSharp.fluid
 
   return (
-    
-      <BackgroundImage
-        Tag="section"
-        fluid={imageData}
-        style={{
-          width: `100vw`,
-          minHeight: `100vh`,
-          backgroundPosition: `center center`,
-          backgroundRepeat: `no-repeat`,
-          backgroundSize: `cover`,
-        }}
-      >
-        <Layout>
-        <Seo title="404: Not found" />
+    <BackgroundImage
+      Tag="section"
+      fluid={imageData}
+      style={{
+        width: `100vw`,
+        minHeight: `100vh`,
+        backgroundPosition: `center center`,
+        backgroundRepeat: `no-repeat`,
+        backgroundSize: `cover`,
+      }}
+    >
+      <Layout>
+        <SEOComp title="404: Not found" />
         <Container
           className="d-flex justify-content-center align-items-center"
           style={{ minHeight: `85vh` }}
@@ -57,9 +56,8 @@ const NotFoundPage = () => {
             </Card.Body>
           </Card.Body>
         </Container>
-        </Layout>
-      </BackgroundImage>
-   
+      </Layout>
+    </BackgroundImage>
   )
 }
 export default NotFoundPage

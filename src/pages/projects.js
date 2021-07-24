@@ -1,26 +1,29 @@
-import React from "react";
-import { graphql } from "gatsby";
-import Container from "react-bootstrap/Container";
-import Layout from "../components/Layout";
-import Seo from "../components/SeoComp";
-import Projects from "../components/Projects";
+import React from "react"
+import { graphql } from "gatsby"
+import Container from "react-bootstrap/Container"
+import Layout from "../components/Layout"
+import SEOComp from "../components/SEOComp"
+import Projects from "../components/Projects"
 
 export default function ProjectsPage({ data }) {
-  const projects = data.projects.nodes;
+  const projects = data.projects.nodes
 
-  return( 
+  return (
     <Layout>
-      <Seo title="Projects" />
-    <Container className="mt-4 justify-contents-center" style={{ maxWidth: `90%`, margin: `0 auto`}}>
-      <Projects projects={projects}/>
-    </Container>
+      <SEOComp title="Projects" />
+      <Container
+        className="mt-4 justify-contents-center"
+        style={{ maxWidth: `90%`, margin: `0 auto` }}
+      >
+        <Projects projects={projects} />
+      </Container>
     </Layout>
   )
 }
 
 export const query = graphql`
   query projectsQuery {
-    projects: allSanityProjects(sort: {fields: client}){
+    projects: allSanityProjects(sort: { fields: client }) {
       nodes {
         id
         client
@@ -40,12 +43,15 @@ export const query = graphql`
         image {
           asset {
             gatsbyImageData(
-              width: 500, height: 500, layout: CONSTRAINED, placeholder: BLURRED, formats: [WEBP, AVIF, AUTO]
+              width: 500
+              height: 500
+              layout: CONSTRAINED
+              placeholder: BLURRED
+              formats: [WEBP, AVIF, AUTO]
             )
-            }
           }
         }
       }
     }
-
-`;
+  }
+`

@@ -5,7 +5,7 @@ import Zoom from "react-reveal/Zoom"
 import Layout from "../components/Layout"
 import Container from "react-bootstrap/Container"
 import styled from "styled-components"
-import Seo from "../components/SeoComp"
+import SEOComp from "../components/SEOComp"
 import Services from "../components/Services"
 import ServicesMbl from "../components/ServicesMbl"
 import HomePageVisual from "../components/HPViz"
@@ -52,7 +52,7 @@ export default function HomePage(props) {
 
   return (
     <Layout>
-      <Seo title="Home" />
+      <SEOComp title="Home" />
 
       <StyledPageContainer>
         <StyledHPVISContainer>
@@ -75,7 +75,8 @@ export default function HomePage(props) {
                   That Guy From Marketing&reg;{" "}
                 </AniLink>
                 offers support across three critical elements of the mix to help
-                ensure they're fit for purpose and not obstacles to reaching the tipping point.
+                ensure they're fit for purpose and not obstacles to reaching the
+                tipping point.
               </p>
               <p>
                 The links below offer more information or, to reach the tipping
@@ -115,12 +116,19 @@ export const query = graphql`
         event_key
         image {
           asset {
-            gatsbyImageData(width: 500, height: 150, layout: CONSTRAINED, fit: SCALE, placeholder: BLURRED, formats: [WEBP, AVIF, AUTO])
-            }
+            gatsbyImageData(
+              width: 500
+              height: 150
+              layout: CONSTRAINED
+              fit: SCALE
+              placeholder: BLURRED
+              formats: [WEBP, AVIF, AUTO]
+            )
           }
         }
       }
-    
+    }
+
     questions: allSanityQuestions {
       nodes {
         id
