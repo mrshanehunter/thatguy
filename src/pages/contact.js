@@ -1,13 +1,13 @@
 import React from "react"
 import Card from "react-bootstrap/Card"
 import Container from "react-bootstrap/Container"
-import SEO from "../components/SEOComp"
+import SeO from "../components/SeoComp"
 import Layout from "../components/Layout"
 import ContactForm from "../components/ContactForm"
 
 const ContactPage = props => (
   <Layout>
-    <SEO title="Contact" />
+    <SeO title="Contact" />
     <Container
       className="d-flex justify-content-center align-items-center"
       style={{ minHeight: `85vh` }}

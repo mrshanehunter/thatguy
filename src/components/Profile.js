@@ -1,5 +1,5 @@
 import React from "react"
-import Image from "gatsby-plugin-sanity-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 
 const StyledContainer = styled.div`
@@ -15,7 +15,7 @@ const StyledContainer = styled.div`
     font-size: 1.4rem;
     }
     h6 {
-    font-family: montserrat, sans-serif;
+    font-family: "montserrat", sans-serif;
     font-style: normal;
     font-weight: 500;
     color: var(--classic);
@@ -25,12 +25,12 @@ const StyledContainer = styled.div`
 
 const StyledImageContainer = styled.div` 
 
-  img {
+  .gatsby-image-wrapper {
       margin-bottom: 2rem;
   }  
   
   @media (min-width: 768px){
-    img {
+    .gatsby-image-wrapper {
         margin-bottom: 0;
     }  
    .textWrap {
@@ -44,33 +44,34 @@ const StyledImageContainer = styled.div`
 `
 ;
 
-function ProfileDetails({ about }) {
+function ProfileDetails({ profile }) {
+  console.log(profile)
     return (
       <StyledContainer>
-        <p>{about.para1}</p>
+        <p>{profile.para1}</p>
         <br />
 
-        <p> {about.para2}</p>
+        <p> {profile.para2}</p>
         <br />
-        <p> {about.para3}</p>
+        <p> {profile.para3}</p>
         <br />
-        <p> {about.para4}</p>
+        <p> {profile.para4}</p>
         <br />
         <StyledImageContainer>
-          <Image
-            {...about.image}
-            width={300}
-            height={300}
-            className="textWrap"
-            style={{
-              height: `17.5rem`,
-              width: `17.5rem`,
-              borderRadius: `50%`,
-              border: `0.25rem solid var(--highlight)`,
-            }}
+          <GatsbyImage
+            image = {profile.image.asset.gatsbyImageData}
+            // width={300}
+            // height={300}
+            // className="textWrap"
+            // style={{
+            //   height: `17.5rem`,
+            //   width: `17.5rem`,
+            //   borderRadius: `50%`,
+            //   border: `0.25rem solid var(--highlight)`,
+            // }}
             alt="Image of That Guy From Marketing"
           />
-          <p>{about.para5}</p>
+          <p>{profile.para5}</p>
         </StyledImageContainer>
 
         <h6>* a Unilever lesson that has not been discarded</h6>
@@ -80,11 +81,11 @@ function ProfileDetails({ about }) {
 
 
 
-export default function Profile({ abouts }) {
+export default function Profile({ profiles }) {
     return (
         <>
-        {abouts.map((about) => (
-            <ProfileDetails key={about.id} about={about} />
+        {profiles.map((profile) => (
+            <ProfileDetails key={profile.id} profile={profile} />
         ))}
     </>
     )

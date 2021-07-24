@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Layout from "../../components/Layout";
 import ServiceLink from "../../components/ServiceLink"
 import ServiceLinkMbl from "../../components/ServiceLinkMbl"
-import SEO from "../../components/SEOComp";
+import SeO from "../../components/SeoComp";
 import Brands from "../../components/Brands";
 import BrandsMbl from "../../components/BrandsMbl";
 import BrandSummary from "../../components/BrandSummary";
@@ -50,7 +50,7 @@ export default function BrandingPage(props) {
 
   return( 
     <Layout>
-      <SEO title="Branding / Brand Development" />
+      <SeO title="Branding / Brand Development" />
       { width < breakpoint ? <ServiceLinkMbl id={"brand"} /> :
       <ServiceLink id={"brand"} /> }
     <StyledContainer>
@@ -64,9 +64,9 @@ export default function BrandingPage(props) {
   )
 }
 
-export const query = graphql` 
-query brandingsQuery {
-    brands: allSanityBrands(sort: {fields: sequence}) {
+export const query = graphql`
+  query brandingsQuery {
+    brands: allSanityBrands(sort: { fields: sequence }) {
       nodes {
         id
         sequence
@@ -80,33 +80,34 @@ query brandingsQuery {
         description
         image {
           asset {
-              fixed(width: 300, height: 300) {
-                  ...GatsbySanityImageFixed
-              }
-              fluid(maxWidth: 700) {
-                  ...GatsbySanityImageFluid
-              }
-
+            gatsbyImageData(
+              width: 500
+              height: 500
+              layout: CONSTRAINED
+              placeholder: BLURRED
+              formats: [WEBP, AVIF, AUTO]
+            )
           }
         }
       }
     }
-    bsummarys : allSanityBsummarys {
+    bsummarys: allSanityBsummarys {
       nodes {
         id
         description
         image {
           asset {
-            fluid(maxWidth: 700) {
-              ...GatsbySanityImageFluid
-            }
+            gatsbyImageData(
+              width: 500
+              height: 500
+              layout: CONSTRAINED
+              placeholder: BLURRED
+              formats: [WEBP, AVIF, AUTO]
+            )
           }
         }
       }
-
     }
   }
-  
-
-`;
+`
 

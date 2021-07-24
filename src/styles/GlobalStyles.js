@@ -173,15 +173,36 @@ background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(217,217,217,0.75) 45%,
   font-size: 1.4rem;
 }
 
-.flipBtnF {
+button.flipBtnF {
   
-  padding: 0;
-  border-style: none;
+  padding: 0px 0px;
+  border-style: groove;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+  .gatsby-image-wrapper {
+    padding: 0.15rem;
+    margin: 0.15rem;
+    filter: grayscale(1);
+    &:hover{
+      filter: grayscale(0);
+    }
+}
 }
 
-.flipBtnB {
-  border: thin solid var(--highlight);
-  background: var(--base);
+button.flipBtnB {
+  border-color: var(--accent);
+  border-style: inset;
+  padding: 0;
+  margin: 0;
+}
+
+button > .flipBtnB > .ServiceList {
+  margin: 0;
+  padding: 0;
+
 }
 .carousel-indicators {   
   margin-bottom: -30px;
@@ -228,6 +249,7 @@ background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(217,217,217,0.75) 45%,
     font-style: normal;
     text-align: center;
   }
+} 
 
 .SSMbl1.card-header {
   .gatsby-image-wrapper {
@@ -257,9 +279,9 @@ background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(217,217,217,0.75) 45%,
   color:  var(--base);
 }
 
-}
+
 .SubmitBtn {
-  font-family: timberline;
+  font-family: "timberline", sans-serif;
   font-size: 2.4rem;
   background: var(--classic);
   border: 0.05rem thin var(--accent);
@@ -271,11 +293,7 @@ background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(217,217,217,0.75) 45%,
     box-shadow: 0 0 0.5rem 0.5rem rgba(254, 254, 212, 0.4);
   }
 }
+`;
 
-
-
-
-
-`
 
 export default GlobalStyles

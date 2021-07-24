@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
+function SeO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -36,16 +36,7 @@ function SEO({ description, lang, meta, title }) {
             "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css",
         },
       ]}
-      script={(function (w, d, s, l, i) {
-        w[l] = w[l] || []
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" })
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : ""
-        j.async = true
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl
-        f.parentNode.insertBefore(j, f)
-      })(window, document, "script", "dataLayer", "GTM-MTN9NP7")}
+      
       meta={[
         {
           name: `description`,
@@ -84,17 +75,17 @@ function SEO({ description, lang, meta, title }) {
   )
 }
 
-SEO.defaultProps = {
+SeO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
 }
 
-SEO.propTypes = {
+SeO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
 }
 
-export default SEO
+export default SeO

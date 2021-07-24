@@ -1,5 +1,5 @@
 import React from "react"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Accordion from "react-bootstrap/Accordion"
 import Card from "react-bootstrap/Card"
@@ -12,7 +12,7 @@ function MarketStreamMbl({ market }) {
         eventKey={market.sequence}
         style={{ cursor: `pointer` }}
       >
-        <Img fluid={market.image.asset.fluid} alt={market.name} style={{maxWidth: `25rem`, maxHeight: `25rem`, margin: `0 auto`, padding: `2rem 0`}}/>
+        <GatsbyImage image={market.image.asset.gatsbyImageData} alt={market.name} style={{maxWidth: `25rem`, maxHeight: `25rem`, margin: `0 auto`, padding: `2rem 0`}}/>
       </Accordion.Toggle>
       <Accordion.Collapse eventKey={market.sequence}>
         <Card.Body className="SSMbl">

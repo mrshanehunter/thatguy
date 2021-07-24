@@ -5,7 +5,7 @@ import Zoom from "react-reveal/Zoom"
 import Layout from "../components/Layout"
 import Container from "react-bootstrap/Container"
 import styled from "styled-components"
-import SEO from "../components/SEOComp"
+import SeO from "../components/SeoComp"
 import Services from "../components/Services"
 import ServicesMbl from "../components/ServicesMbl"
 import HomePageVisual from "../components/HPViz"
@@ -52,7 +52,7 @@ export default function HomePage(props) {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SeO title="Home" />
 
       <StyledPageContainer>
         <StyledHPVISContainer>
@@ -115,16 +115,12 @@ export const query = graphql`
         event_key
         image {
           asset {
-            fixed(width: 500, height: 250) {
-              ...GatsbySanityImageFixed
-            }
-            fluid(maxWidth: 700) {
-              ...GatsbySanityImageFluid
+            gatsbyImageData(width: 500, height: 150, layout: CONSTRAINED, fit: SCALE, placeholder: BLURRED, formats: [WEBP, AVIF, AUTO])
             }
           }
         }
       }
-    }
+    
     questions: allSanityQuestions {
       nodes {
         id

@@ -1,4 +1,6 @@
-require("dotenv").config()
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 module.exports = {
   siteMetadata: {
@@ -8,6 +10,7 @@ module.exports = {
     siteUrl: `https://thatguyfrommarketing.com`,
   },
   plugins: [
+    `gatsby-plugin-image`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -43,20 +46,15 @@ module.exports = {
     {
       resolve: `gatsby-source-sanity`,
       options: {
-        projectId: "weuctgl1",
-        dataset: "production",
+        projectId: process.env.SANITY_PROJECT_ID,
+        dataset: process.env.SANITY_DATASET,
+        apiVersion: "v2021-03-25",
         token: process.env.SANITY_TOKEN,
+        useCdn: false,
         watchMode: false,
       },
     },
-    {
-      resolve: `gatsby-plugin-sanity-image`,
-      options: {
-        projectId: process.env.SANITY_PROJECT_ID,
-        dataset: process.env.SANITY_DATASET,
-        token: process.env.SANITY_TOKEN,
-      },
-    },
+    
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {

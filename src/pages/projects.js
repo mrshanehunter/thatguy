@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Container from "react-bootstrap/Container";
 import Layout from "../components/Layout";
-import SEO from "../components/SEOComp";
+import SeO from "../components/SeoComp";
 import Projects from "../components/Projects";
 
 export default function ProjectsPage({ data }) {
@@ -10,7 +10,7 @@ export default function ProjectsPage({ data }) {
 
   return( 
     <Layout>
-      <SEO title="Projects" />
+      <SeO title="Projects" />
     <Container className="mt-4 justify-contents-center" style={{ maxWidth: `90%`, margin: `0 auto`}}>
       <Projects projects={projects}/>
     </Container>
@@ -39,15 +39,13 @@ export const query = graphql`
         service12
         image {
           asset {
-            fixed(width: 300, height: 300) {
-              ...GatsbySanityImageFixed
-            }
-            fluid(maxWidth: 700) {
-              ...GatsbySanityImageFluid
+            gatsbyImageData(
+              width: 500, height: 500, layout: CONSTRAINED, placeholder: BLURRED, formats: [WEBP, AVIF, AUTO]
+            )
             }
           }
         }
       }
     }
-  }
+
 `;

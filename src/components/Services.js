@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import Container from "react-bootstrap/Container"
 import styled from "styled-components"
 import {Animated} from "react-animated-css"
@@ -120,7 +120,10 @@ function ServiceStream({ stream }) {
         >
           {visible && (
             <StyledOverlay>
-              <Img fluid={stream.image.asset.fluid} alt={stream.name} />
+              <GatsbyImage
+                image={stream.image.asset.gatsbyImageData}
+                alt={stream.name}
+              />
             </StyledOverlay>
           )}
           {!visible && (

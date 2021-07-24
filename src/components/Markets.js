@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 import {Animated} from "react-animated-css"
 
@@ -146,7 +146,7 @@ function MarketingDivisions({ market }) {
       >
         {visible && (
           <StyledOverlay>
-            <Img fluid={market.image.asset.fluid} alt={market.name} />
+            <GatsbyImage image={market.image.asset.gatsbyImageData} alt={market.name} />
           </StyledOverlay>
         )}
         {!visible && (

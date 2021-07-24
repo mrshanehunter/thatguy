@@ -1,5 +1,5 @@
 import React from "react"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 
 const StyledSummary = styled.div` 
@@ -26,7 +26,7 @@ const StyledSummary = styled.div`
 function Summary({ wsummary }) {
     return (
         <StyledSummary>
-        <Img fluid={wsummary.image.asset.fluid} alt="Website Service Image" />
+        <GatsbyImage image={wsummary.image.asset.gatsbyImageData} alt="Website Service Image" />
         <p>{wsummary.description}</p>
         </StyledSummary>
     )

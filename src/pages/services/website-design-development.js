@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Layout from "../../components/Layout";
 import ServiceLink from "../../components/ServiceLink"
 import ServiceLinkMbl from "../../components/ServiceLinkMbl"
-import SEO from "../../components/SEOComp";
+import SeO from "../../components/SeoComp";
 import Webs from "../../components/Webs";
 import WebsMbl from "../../components/WebsMbl"
 import WebsiteSummary from "../../components/WebsiteSummary"
@@ -51,7 +51,7 @@ export default function WebsitePage(props) {
 
   return( 
     <Layout>
-      <SEO title="Website Design / Development" />
+      <SeO title="Website Design / Development" />
       { width < breakpoint ? <ServiceLinkMbl id={"web"} /> :
       <ServiceLink id={"web"} />}
       <StyledContainer>
@@ -65,9 +65,9 @@ export default function WebsitePage(props) {
   )
 }
 
-export const query = graphql` 
-query websQuery {
-    webs: allSanityWebs(sort: {fields: sequence})  {
+export const query = graphql`
+  query websQuery {
+    webs: allSanityWebs(sort: { fields: sequence }) {
       nodes {
         id
         sequence
@@ -81,31 +81,33 @@ query websQuery {
         description
         image {
           asset {
-              fixed(width: 300, height: 300) {
-                  ...GatsbySanityImageFixed
-              }
-              fluid(maxWidth: 700) {
-                  ...GatsbySanityImageFluid
-              }
-
+            gatsbyImageData(
+              width: 500
+              height: 500
+              layout: FULL_WIDTH
+              placeholder: BLURRED
+              formats: [WEBP, AVIF, AUTO]
+            )
           }
         }
       }
     }
-    wsummarys : allSanityWsummarys {
+    wsummarys: allSanityWsummarys {
       nodes {
         id
         description
         image {
           asset {
-            fluid(maxWidth: 700) {
-              ...GatsbySanityImageFluid
-            }
+            gatsbyImageData(
+              width: 500
+              height: 500
+              layout: FULL_WIDTH
+              placeholder: BLURRED
+              formats: [WEBP, AVIF, AUTO]
+            )
           }
         }
       }
-
     }
   }
-
-`;
+`

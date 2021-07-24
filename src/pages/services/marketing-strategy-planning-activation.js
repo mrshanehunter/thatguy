@@ -4,7 +4,7 @@ import styled from "styled-components"
 import Layout from "../../components/Layout"
 import ServiceLink from "../../components/ServiceLink"
 import ServiceLinkMbl from "../../components/ServiceLinkMbl"
-import SEO from "../../components/SEOComp"
+import SeO from "../../components/SeoComp"
 import Markets from "../../components/Markets"
 import MarketsMbl from "../../components/MarketsMbl"
 import MarketingSummary from "../../components/MarketingSummary"
@@ -53,7 +53,7 @@ export default function MarketingPage(props) {
 
   return (
     <Layout>
-      <SEO title="Marketing Strategy, Planning, Activation" />
+      <SeO title="Marketing Strategy, Planning, Activation" />
       {width < breakpoint ?  <ServiceLinkMbl id={"mktg"} /> :
         <ServiceLink id={"mktg"} />
       }
@@ -69,9 +69,9 @@ export default function MarketingPage(props) {
   )
 }
 
-export const query = graphql` 
-query marketsQuery {
-    markets: allSanityMarkets(sort: {fields: sequence})  {
+export const query = graphql`
+  query marketsQuery {
+    markets: allSanityMarkets(sort: { fields: sequence }) {
       nodes {
         id
         sequence
@@ -85,31 +85,33 @@ query marketsQuery {
         description
         image {
           asset {
-              fixed(width: 300, height: 300) {
-                  ...GatsbySanityImageFixed
-              }
-              fluid(maxWidth: 700) {
-                  ...GatsbySanityImageFluid
-              }
-
+            gatsbyImageData(
+              width: 500
+              height: 500
+              layout: FULL_WIDTH
+              placeholder: BLURRED
+              formats: [WEBP, AVIF, AUTO]
+            )
           }
         }
       }
     }
-    msummarys : allSanityMsummarys {
+    msummarys: allSanityMsummarys {
       nodes {
         id
         description
         image {
           asset {
-            fluid(maxWidth: 700) {
-              ...GatsbySanityImageFluid
-            }
+            gatsbyImageData(
+              width: 500
+              height: 500
+              layout: FULL_WIDTH
+              placeholder: BLURRED
+              formats: [WEBP, AVIF, AUTO]
+            )
           }
         }
       }
-
-    }  
+    }
   }
-
-`;
+`

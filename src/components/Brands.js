@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 import {Animated} from "react-animated-css"
 
@@ -150,7 +150,7 @@ function BrandingDivisions({ brand }) {
                  {visible && 
                  
                     <StyledOverlay>
-                       <Img fluid={brand.image.asset.fluid} alt={brand.name} />
+                       <GatsbyImage image={brand.image.asset.gatsbyImageData} alt={brand.name} />
                         </StyledOverlay> 
                 
                  

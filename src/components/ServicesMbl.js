@@ -1,5 +1,5 @@
 import React from "react"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Accordion from "react-bootstrap/Accordion"
 import Card from "react-bootstrap/Card"
@@ -11,7 +11,7 @@ function ServiceStreamMbl({ stream }) {
     <Card className="w-100  SSMbl1" style={{maxWidth: `55rem`}}>
       <Accordion.Toggle as={Card.Header} eventKey={stream.event_key} style={{cursor: `pointer`}} >
     
-        <Img fluid={stream.image.asset.fluid} alt={stream.name} />
+        <GatsbyImage image={stream.image.asset.gatsbyImageData} alt={stream.name} />
       </Accordion.Toggle>
       <Accordion.Collapse eventKey={stream.event_key}>
         <Card.Body className="SSMbl">

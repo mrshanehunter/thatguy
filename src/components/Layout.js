@@ -54,10 +54,11 @@ export default function Layout({ children }) {
             {
               <noscript>
                 <iframe
+                  title={data.site.siteMetadata?.title}
                   src="https://www.googletagmanager.com/ns.html?id=GTM-MTN9NP7"
                   height="0"
                   width="0"
-                  style="display:none;visibility:hidden"
+                  style={{display: `none`, visibility: `hidden`}}
                 ></iframe>
               </noscript>
             }
