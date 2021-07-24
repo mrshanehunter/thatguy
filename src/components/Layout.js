@@ -19,7 +19,7 @@ const ContentContainer = styled.div`
 `;
 
 const StyledContentContainer = styled.div` 
-  width: 90%;
+  width: 97.5%;
   min-height: 90vh;
   margin: 1rem auto;
   background: transparent;
