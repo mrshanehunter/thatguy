@@ -1,5 +1,5 @@
 import React from "react"
-import AniLink from "gatsby-plugin-transition-link/Anilink"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import styled from "styled-components"
 import Zoom from "react-reveal/Zoom"
 import QuestionSet from "./QuestionSet"

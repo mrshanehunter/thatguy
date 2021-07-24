@@ -1,6 +1,6 @@
 import React from "react"
 import Img from "gatsby-image"
-import AniLink from "gatsby-plugin-transition-link"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Accordion from "react-bootstrap/Accordion"
 import Card from "react-bootstrap/Card"
 
