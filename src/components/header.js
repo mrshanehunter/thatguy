@@ -4,7 +4,8 @@ import PropTypes from "prop-types"
 import Nav from "react-bootstrap/Nav"
 
 
-const Header = ({ siteTitle, children }) => (
+export default function Header({ siteTitle, children }) {
+ return  (
   <header>
    
     <Nav className="justify-content-end">
@@ -31,7 +32,7 @@ const Header = ({ siteTitle, children }) => (
   </Nav>
     <div className="graded"></div>
   </header>
-)
+)}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
@@ -41,4 +42,5 @@ Header.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
+
+

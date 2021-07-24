@@ -8,7 +8,7 @@ import GlobalStyles from "../styles/GlobalStyles"
 import Footer from "./Footer"
 import Logo from "./Logo"
 
-import Header from "./Header"
+import Header from "./header"
 
 const ContentContainer = styled.div`
   width: 90vw;
