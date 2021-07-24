@@ -8,7 +8,7 @@ import styled from "styled-components"
 import SEO from "../components/SEOComp"
 import Services from "../components/Services"
 import ServicesMbl from "../components/ServicesMbl"
-import HomePageVis from "../components/HomePageVis"
+import HomePageVisual from "../components/HPViz"
 
 const StyledPageContainer = styled.div`
   width: 100%;
@@ -56,7 +56,7 @@ export default function HomePage(props) {
 
       <StyledPageContainer>
         <StyledHPVISContainer>
-          <HomePageVis props={props} />
+          <HomePageVisual props={props} />
         </StyledHPVISContainer>
 
         <Container

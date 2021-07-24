@@ -30,7 +30,7 @@ const StyledQuestionsContainer = styled.div`
     }
 `;
 
-export default function HomePageVis(props) {
+export default function HomePageVisual(props) {
 const [width, setWidth] =useState();
 const breakpoint = 1024;
 const questions = props.props.data.questions.nodes;

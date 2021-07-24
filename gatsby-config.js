@@ -3,8 +3,9 @@ require("dotenv").config()
 module.exports = {
   siteMetadata: {
     title: `That Guy From Marketing`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Brand & Marketing Consultant in Melbourne focusing on SMEs & Challenger Brands.`,
+    author: `That Guy From Marketing`,
+    siteUrl: `https://thatguyfrommarketing.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -45,7 +46,7 @@ module.exports = {
         projectId: 'weuctgl1',
         dataset: 'production',
         token: process.env.SANITY_TOKEN,
-        watchMode: true,
+        watchMode: false,
       },
     },
     {
