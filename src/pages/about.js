@@ -13,7 +13,7 @@ export default function AboutPage({ data }) {
     return (
         <>
         <Layout>
-            <SEO title="About That Guy From Marketing" />
+            <SEO title="About" />
             <Container className="w-75 mt-5 d-flex-column justify-content-center align-items-center">
             
             <Profile abouts={abouts} />

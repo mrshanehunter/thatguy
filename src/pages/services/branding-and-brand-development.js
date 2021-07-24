@@ -50,7 +50,7 @@ export default function BrandingPage(props) {
 
   return( 
     <Layout>
-      <SEO title="Branding & Brand Development" />
+      <SEO title="Branding / Brand Development" />
       { width < breakpoint ? <ServiceLinkMbl id={"brand"} /> :
       <ServiceLink id={"brand"} /> }
     <StyledContainer>

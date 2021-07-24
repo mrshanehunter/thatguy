@@ -51,7 +51,7 @@ export default function WebsitePage(props) {
 
   return( 
     <Layout>
-      <SEO title="Website Design & Development" />
+      <SEO title="Website Design / Development" />
       { width < breakpoint ? <ServiceLinkMbl id={"web"} /> :
       <ServiceLink id={"web"} />}
       <StyledContainer>
