@@ -36,15 +36,15 @@ module.exports = {
       resolve: `gatsby-plugin-web-font-loader`,
       options: {
         typekit: {
-          id: process.env.TYPEKIT_ID
+          id: process.env.TYPEKIT_ID,
         },
       },
     },
     {
       resolve: `gatsby-source-sanity`,
       options: {
-        projectId: 'weuctgl1',
-        dataset: 'production',
+        projectId: "weuctgl1",
+        dataset: "production",
         token: process.env.SANITY_TOKEN,
         watchMode: false,
       },
@@ -52,10 +52,20 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sanity-image`,
       options: {
-        projectId: `weuctgl1`,
-        dataset: `production`,
+        projectId: process.env.SANITY_PROJECT_ID,
+        dataset: process.env.SANITY_DATASET,
         token: process.env.SANITY_TOKEN,
-      }
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+       
+        trackingIds: [{
+          "GA-TRACKING_ID": process.env.GA_TRACKING, 
+        }
+        ],
+      },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
