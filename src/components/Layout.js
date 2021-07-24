@@ -16,17 +16,16 @@ const ContentContainer = styled.div`
   margin: 2rem auto;
   display: flex;
   flex-direction: column;
-`;
+`
 
-const StyledContentContainer = styled.div` 
+const StyledContentContainer = styled.div`
   width: 97.5%;
   min-height: 90vh;
   margin: 1rem auto;
   background: transparent;
   flex: 1;
   align-items: center;
-
-`;
+`
 
 export default function Layout({ children }) {
   const data = useStaticQuery(graphql`
@@ -51,7 +50,19 @@ export default function Layout({ children }) {
             <Logo />
           </AniLink>
           <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-          <StyledContentContainer>{children}</StyledContentContainer>
+          <StyledContentContainer>
+            {
+              <noscript>
+                <iframe
+                  src="https://www.googletagmanager.com/ns.html?id=GTM-MTN9NP7"
+                  height="0"
+                  width="0"
+                  style="display:none;visibility:hidden"
+                ></iframe>
+              </noscript>
+            }
+            {children}
+          </StyledContentContainer>
           <Footer />
         </ContentContainer>
       </Container>
