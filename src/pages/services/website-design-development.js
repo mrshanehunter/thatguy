@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Layout from "../../components/Layout";
 import ServiceLink from "../../components/ServiceLink"
 import ServiceLinkMbl from "../../components/ServiceLinkMbl"
-import SeO from "../../components/SeoComp";
+import Seo from "../../components/SeoComp";
 import Webs from "../../components/Webs";
 import WebsMbl from "../../components/WebsMbl"
 import WebsiteSummary from "../../components/WebsiteSummary"
@@ -51,7 +51,7 @@ export default function WebsitePage(props) {
 
   return( 
     <Layout>
-      <SeO title="Website Design / Development" />
+      <Seo title="Website Design / Development" />
       { width < breakpoint ? <ServiceLinkMbl id={"web"} /> :
       <ServiceLink id={"web"} />}
       <StyledContainer>

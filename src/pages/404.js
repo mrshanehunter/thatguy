@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container"
 import Card from "react-bootstrap/Card"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Layout from "../components/Layout"
-import SeO from "../components/SeoComp"
+import Seo from "../components/SeoComp"
 
 const NotFoundPage = () => {
   const data = useStaticQuery(graphql`
@@ -36,7 +36,7 @@ const NotFoundPage = () => {
         }}
       >
         <Layout>
-        <SeO title="404: Not found" />
+        <Seo title="404: Not found" />
         <Container
           className="d-flex justify-content-center align-items-center"
           style={{ minHeight: `85vh` }}

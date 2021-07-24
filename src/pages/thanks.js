@@ -3,12 +3,12 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Card from "react-bootstrap/Card"
 import Container from "react-bootstrap/Container"
 import Layout from "../components/Layout"
-import SeO from "../components/SEOComp"
+import Seo from "../components/SeoComp"
 
 
 const ThanksPage = () => (
   <Layout>
-    <SeO title="Thanks" />
+    <Seo title="Thanks" />
     
     <Container
       className="d-flex justify-content-center align-items-center"

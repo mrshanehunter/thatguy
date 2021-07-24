@@ -1,14 +1,14 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
-import SeO from "../components/SEOComp"
+import Seo from "../components/SeoComp"
 import TermsPolicy from "../components/TermsPolicy"
 
 export default function TermsPage(props) {
 
     return (
         <Layout>
-        <SeO title="Terms and Conditions" />
+        <Seo title="Terms and Conditions" />
         <>
             <TermsPolicy props={props} />
         </> 

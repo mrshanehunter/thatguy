@@ -5,7 +5,7 @@ import Zoom from "react-reveal/Zoom"
 import Layout from "../components/Layout"
 import Container from "react-bootstrap/Container"
 import styled from "styled-components"
-import SeO from "../components/SeoComp"
+import Seo from "../components/SeoComp"
 import Services from "../components/Services"
 import ServicesMbl from "../components/ServicesMbl"
 import HomePageVisual from "../components/HPViz"
@@ -52,7 +52,7 @@ export default function HomePage(props) {
 
   return (
     <Layout>
-      <SeO title="Home" />
+      <Seo title="Home" />
 
       <StyledPageContainer>
         <StyledHPVISContainer>

@@ -4,7 +4,7 @@ import styled from "styled-components"
 import Layout from "../../components/Layout"
 import ServiceLink from "../../components/ServiceLink"
 import ServiceLinkMbl from "../../components/ServiceLinkMbl"
-import SeO from "../../components/SeoComp"
+import Seo from "../../components/SeoComp"
 import Markets from "../../components/Markets"
 import MarketsMbl from "../../components/MarketsMbl"
 import MarketingSummary from "../../components/MarketingSummary"
@@ -53,7 +53,7 @@ export default function MarketingPage(props) {
 
   return (
     <Layout>
-      <SeO title="Marketing Strategy, Planning, Activation" />
+      <Seo title="Marketing Strategy, Planning, Activation" />
       {width < breakpoint ?  <ServiceLinkMbl id={"mktg"} /> :
         <ServiceLink id={"mktg"} />
       }

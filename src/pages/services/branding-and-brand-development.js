@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Layout from "../../components/Layout";
 import ServiceLink from "../../components/ServiceLink"
 import ServiceLinkMbl from "../../components/ServiceLinkMbl"
-import SeO from "../../components/SeoComp";
+import Seo from "../../components/SeoComp";
 import Brands from "../../components/Brands";
 import BrandsMbl from "../../components/BrandsMbl";
 import BrandSummary from "../../components/BrandSummary";
@@ -50,7 +50,7 @@ export default function BrandingPage(props) {
 
   return( 
     <Layout>
-      <SeO title="Branding / Brand Development" />
+      <Seo title="Branding / Brand Development" />
       { width < breakpoint ? <ServiceLinkMbl id={"brand"} /> :
       <ServiceLink id={"brand"} /> }
     <StyledContainer>

@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import Container from "react-bootstrap/Container"
 import Layout from "../components/Layout"
-import SeO from "../components/SeoComp"
+import Seo from "../components/SeoComp"
 import BrandCarousel from "../components/BrandCarousel"
 import Profile from "../components/Profile"
 
@@ -14,7 +14,7 @@ export default function AboutPage( props ) {
     return (
         <>
         <Layout>
-            <SeO title="About" />
+            <Seo title="About" />
             <Container className="w-75 mt-5 d-flex-column justify-content-center align-items-center">
             
             <Profile profiles={profiles} />

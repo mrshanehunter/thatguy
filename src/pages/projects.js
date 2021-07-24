@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Container from "react-bootstrap/Container";
 import Layout from "../components/Layout";
-import SeO from "../components/SeoComp";
+import Seo from "../components/SeoComp";
 import Projects from "../components/Projects";
 
 export default function ProjectsPage({ data }) {
@@ -10,7 +10,7 @@ export default function ProjectsPage({ data }) {
 
   return( 
     <Layout>
-      <SeO title="Projects" />
+      <Seo title="Projects" />
     <Container className="mt-4 justify-contents-center" style={{ maxWidth: `90%`, margin: `0 auto`}}>
       <Projects projects={projects}/>
     </Container>

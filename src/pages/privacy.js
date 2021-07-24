@@ -1,14 +1,14 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
-import SeO from "../components/SEOComp"
+import Seo from "../components/SeoComp"
 import PrivacyPolicy from "../components/PrivacyPolicy"
 
 export default function PrivacyPage(props) {
 
     return (
         <Layout>
-        <SeO title="Privacy Policy" />
+        <Seo title="Privacy Policy" />
         <>
             <PrivacyPolicy props={props} />
         </> 
