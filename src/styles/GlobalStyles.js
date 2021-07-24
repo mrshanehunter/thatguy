@@ -258,7 +258,19 @@ background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(217,217,217,0.75) 45%,
 }
 
 }
-
+.SubmitBtn {
+  font-family: timberline;
+  font-size: 2.4rem;
+  background: var(--classic);
+  border: 0.05rem thin var(--accent);
+  color: var(--gray);
+  &:hover {
+    background: var(--highlight);
+    color: var(---base);
+    border: 0.1rem solid var(--accent);
+    box-shadow: 0 0 0.5rem 0.5rem rgba(254, 254, 212, 0.4);
+  }
+}
 
 
 

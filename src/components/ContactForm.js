@@ -115,14 +115,8 @@ export default function ContactForm(props) {
         <Button
           type="submit"
           disabled={loading}
-          className="w-100 mt-4"
-          style={{
-            fontFamily: `timberline`,
-            fontSize: `2.4rem`,
-            background: `var(--classic)`,
-            border: `0.05rem thin var(--accent)`,
-            color: `var(--gray)`,
-          }}
+          className="w-100 mt-4 SubmitBtn"
+          
         >
           Submit
         </Button>
