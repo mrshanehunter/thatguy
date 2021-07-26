@@ -54,7 +54,7 @@ const StyledImageContainer = styled.div`
 ;
 
 function ProfileDetails({ profile }) {
-  console.log(profile)
+  
     return (
       <StyledContainer>
         <p>{profile.para1}</p>
