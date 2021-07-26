@@ -63,6 +63,15 @@ module.exports = {
             "GA-TRACKING_ID": process.env.GA_TRACKING,
           },
         ],
+        gtagConfig: {
+          optimize_id: process.env.GA_GTAG,
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        pluginConfig: {
+          head: false,
+          exclude: ["/preview/**", "/do-not-track/me/too"],
+        },
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
