@@ -344,6 +344,10 @@ button > .flipBtnB > .ServiceList {
     box-shadow: 0 0 0.5rem 0.5rem rgba(254, 254, 212, 0.4);
   }
 }
+
+.contactContainer {
+  margin-top: 2rem;
+}
 `
 
 
