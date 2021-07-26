@@ -10,6 +10,15 @@ module.exports = {
     author: `That Guy From Marketing`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [process.env.GA_GTAG],
+        pluginConfig: {
+          head: true,
+        },
+      },
+    },
     `gatsby-plugin-image`,
     `gatsby-plugin-react-helmet`,
     {
@@ -55,24 +64,6 @@ module.exports = {
       },
     },
 
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: [
-            process.env.GA_TRACKING,
-            process.env.GA_GTAG,         
-        ],
-        gtagConfig: {
-          optimize_id: process.env.GA_GTAG,
-          anonymize_ip: true,
-          cookie_expires: 0,
-        },
-        pluginConfig: {
-          head: false,
-          exclude: ["/preview/**", "/do-not-track/me/too"],
-        },
-      },
-    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
