@@ -4,13 +4,13 @@ import { graphql } from "gatsby"
 import Container from "react-bootstrap/Container"
 import Layout from "../components/Layout"
 import SEOComp from "../components/SEOComp"
-import BrandCarousel from "../components/BrandCarousel"
+import ControlledCarousel from "../components/ControlledCarousel"
 import Profile from "../components/Profile"
 
 export default function AboutPage(props) {
-  console.log(props)
+ 
   const profiles = props.data.abouts.nodes
-  const slides = props.data.carousels.nodes
+  
   return (
     <>
       <Layout>
@@ -28,10 +28,10 @@ export default function AboutPage(props) {
               }}
             >
               These are some of the brands and businesses that have benefitted
-              from a relationship with That Guy From Marketing.{" "}
+              from a relationship with That Guy From Marketing&reg;.{" "}
             </p>
           </div>
-          <BrandCarousel slides={slides} />
+          <ControlledCarousel />
         </Container>
       </Layout>
     </>
@@ -63,22 +63,6 @@ export const query = graphql`
         }
       }
     }
-    carousels: allSanityCarousels(sort: { fields: sequence }) {
-      nodes {
-        id
-        sequence
-        image {
-          asset {
-            gatsbyImageData(
-              width: 500
-              fit: FILL
-              layout: CONSTRAINED
-              placeholder: BLURRED
-              formats: [AUTO, WEBP]
-            )
-          }
-        }
-      }
-    }
+    
   }
 `

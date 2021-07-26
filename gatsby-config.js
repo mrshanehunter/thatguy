@@ -4,10 +4,10 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://thatguyfrommarketing.com`,
     title: `That Guy From Marketing`,
     description: `Brand & Marketing Consultant in Melbourne focusing on SMEs & Challenger Brands.`,
     author: `That Guy From Marketing`,
-    siteUrl: `https://thatguyfrommarketing.com`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -54,14 +54,14 @@ module.exports = {
         watchMode: false,
       },
     },
-    
+
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-       
-        trackingIds: [{
-          "GA-TRACKING_ID": process.env.GA_TRACKING, 
-        }
+        trackingIds: [
+          {
+            "GA-TRACKING_ID": process.env.GA_TRACKING,
+          },
         ],
       },
     },

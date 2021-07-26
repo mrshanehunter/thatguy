@@ -17,5 +17,11 @@ export default {
             type: 'number',
             description: 'Order with numbers for sorting',
           },   
+          {
+            name: 'index',
+            title: 'Banner Index Number',
+            type: 'number',
+            description: 'Index for carousel display',
+          },   
     ],      
 }

@@ -204,7 +204,17 @@ button > .flipBtnB > .ServiceList {
   padding: 0;
 
 }
-.carousel-indicators {   
+
+.carousel {
+  width: 100%;
+  margin: 0 auto;
+  @media (min-width: 769px) {
+    width: 40%;
+    margin: 0 auto;
+  }
+}
+
+.carousel-indicators {  
   margin-bottom: -30px;
 }
 
@@ -213,7 +223,7 @@ button > .flipBtnB > .ServiceList {
   z-index: 3000;
   bottom: 0;
   right: 0;
-  margin-right: 35px;
+  margin-right: 25%;
   margin-bottom: -30px;
   // border: 2px ridge var(--highlight);
   border-radius: 50%;
@@ -227,12 +237,17 @@ button > .flipBtnB > .ServiceList {
   z-index: 3000;
   bottom: 0;
   left: 0;
-  margin-left: 35px;
+  margin-left: 25%;
   margin-bottom: -30px;
   // border: 2px ridge var(--highlight);
   border-radius: 50%;
   // background-color: var(--highlight);
   background-size: 20px 20px;
+  
+}  
+.sr-only {
+  
+  display: none;
   
 }  
 
