@@ -84,9 +84,9 @@ export const query = graphql`
         image {
           asset {
             gatsbyImageData(
-              width: 500
-              height: 500
-              layout: CONSTRAINED
+              width: 400
+              height: 400
+              layout: FULL_WIDTH
               placeholder: BLURRED
               formats: [WEBP, AVIF, AUTO]
             )
@@ -101,9 +101,9 @@ export const query = graphql`
         image {
           asset {
             gatsbyImageData(
-              width: 500
-              height: 500
-              layout: CONSTRAINED
+              width: 500  
+              height: 175
+              layout: FULL_WIDTH
               placeholder: BLURRED
               formats: [WEBP, AVIF, AUTO]
             )
