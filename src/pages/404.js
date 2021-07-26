@@ -14,10 +14,10 @@ const NotFoundPage = () => {
       fourohfourimage: file(relativePath: { eq: "fourohfour.jpg" }) {
         childImageSharp {
           gatsbyImageData(
-            width: 1920,
-            layout: CONSTRAINED,
-            quality: 75,
-            placeholder: BLURRED,
+            width: 1920
+            layout: CONSTRAINED
+            quality: 50
+            placeholder: BLURRED
             formats: WEBP
             ) 
         }
