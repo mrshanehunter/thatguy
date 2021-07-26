@@ -59,9 +59,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [
-          {
-            "GA-TRACKING_ID": process.env.GA_TRACKING,
-          },
+            process.env.GA_TRACKING,
+            process.env.GA_GTAG,         
         ],
         gtagConfig: {
           optimize_id: process.env.GA_GTAG,
