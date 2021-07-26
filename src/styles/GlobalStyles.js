@@ -125,31 +125,60 @@ background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(217,217,217,0.75) 45%,
   font-size: clamp(1.4rem, 1.2vw, 1.8rem);
 }
 
-.thankyou {
-  color: var(--gray);
-  font-size: clamp(1.4rem, 1.2vw, 1.8rem);
+.thankyoucard {
+  background: rgba(8, 4, 36, 0.5);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0.15rem 0.15rem 0.15rem var(--base);
 }
 
-.pageNF h1 {
+.thankyouheader h1 {
+  font-family: "timberline", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: clamp(3rem, 3vw, 6rem);
+  color: var(--highlight);
+  text-shadow: 0.25rem 0.25rem 0.15rem var(--base);
+}
+
+.thankyou {
+  h3 {
   color: var(--gray);
-  text-shadow: 0.5vw 0.5vw 0.5rem var(--base);
+  text-shadow: 0.25rem 0.25rem 0.15rem var(--base);
   font-family: "montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: clamp(1.8rem, 3vw, 10rem)
+  font-size: clamp(1.8rem, 2vw, 4rem);
+  margin-bottom: 1.5rem;
+  }
+  a {
+    color: var(--highlight);
+    font-size: clamp(1.8rem, 2vw, 4rem);
+    text-shadow: 0.25rem 0.25rem 0.15rem var(--base);
+  }
+}
+
+.pageNF h2 {
+  color: var(--gray);
+  text-shadow: 0.35rem 0.35rem 0.15rem var(--base);
+  font-family: "montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(1.8rem, 3vw, 7rem)
 }
 
 .pageNF p {
   font-size: clamp(2rem, 1.95vw, 4rem);
-  font-family: "timberline";
+  font-family: "montserrat", sans-serif;
   color: var(--gray);
-  text-shadow: 0.5vw 0.5vw 0.5rem var(--base);
+  text-shadow: 0.35rem 0.35rem 0.15rem var(--base);
 }
 
 .pnfLink {
+  width: 75%;
   margin: 0 auto;
-  padding: 1vw;
-  background: rgba(8, 4, 36, 0.45);
+  padding: 1.5rem;
+  background: rgba(8, 4, 36, 0.75);
   border-radius: 5px;
   border: 0.05rem solid var(--base);
   font-family: "montserrat", sans-serif;
@@ -157,7 +186,14 @@ background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(217,217,217,0.75) 45%,
   font-weight: 600;
   font-size: clamp(1.8rem, 1.5vw, 4rem);
   color: var(----highlight);
-  text-shadow: 0.5vw 0.5vw 0.5rem var(--base);
+  text-shadow: 0.35rem 0.35rem 0.15rem var(--base);
+  &:hover {
+    background: var(--classic);
+    font-family: "timberline", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--gray);
+  }
 
 }
 
@@ -308,7 +344,7 @@ button > .flipBtnB > .ServiceList {
     box-shadow: 0 0 0.5rem 0.5rem rgba(254, 254, 212, 0.4);
   }
 }
-`;
+`
 
 
 export default GlobalStyles
