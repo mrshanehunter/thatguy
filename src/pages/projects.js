@@ -12,7 +12,7 @@ export default function ProjectsPage({ data }) {
     <Layout>
       <SEOComp title="Projects" />
       <Container
-        className="mt-4 justify-contents-center"
+        className="mt-4 justify-content-center"
         style={{ maxWidth: `90%`, margin: `0 auto` }}
       >
         <Projects projects={projects} />

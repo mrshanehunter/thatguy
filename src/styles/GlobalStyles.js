@@ -62,7 +62,7 @@ h3 {
   font-size: clamp(1.6rem, 1.3vw, 1.8rem);
   margin-bottom: 1rem;
   margin-right: 2vw;
-  :nth-child(4) {
+  :nth-child(5) {
     margin-right: 0;
   }
 }
@@ -349,6 +349,5 @@ button > .flipBtnB > .ServiceList {
   margin-top: 2rem;
 }
 `
-
 
 export default GlobalStyles
