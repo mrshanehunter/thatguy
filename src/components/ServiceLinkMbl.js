@@ -18,9 +18,7 @@ const BlankItem = styled.div`
 
 export default function ServiceLinkMbl(props) {
   const pgLoc = props.id
-  console.log(props)
 
- 
     return (
       <StyledServiceLink>
         <Nav>
